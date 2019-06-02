@@ -1,0 +1,80 @@
+/**
+
+CSS for search tours module:
+https://cabinet.tourvisor.ru/module/code/search/0;
+
+**/
+
+.TVWideForm {
+  min-height: 108px;
+  box-shadow: 0px 14px 34px rgba(36, 65, 98, 0.43), 0px 4px 4px rgba(0, 67, 198, 0.21);
+  border-radius: 8px;
+  background: radial-gradient(600px at 46.57% 131.66%, #DDBFBF 0%, #66ACDF 59.21%, #8AD8F1 100%);
+}
+
+.TVInterfaceWrapper {
+  font-family: Montserrat;
+  overflow: visible;
+}
+.TVWideForm .TVMainForm {
+  position: relative;
+  background: none;
+  display: flex;
+  padding: 24px 24px 32px;
+}
+.TVFormBlock {
+  flex: 1 auto;
+}
+.TVSearchButton {
+  text-shadow: none;
+}
+.TVLabel {
+  text-shadow: none;
+  font-family: Tourvisor,Trebuchet MS,arial,sans-serif;
+}
+.TVTextBox, .TVBigBox, .TVLocationBox {
+  box-shadow: 0px 14px 36px rgba(0, 20, 122, 0.15), 0px 2px 4px rgba(206, 103, 190, 0.11);
+  border-radius: 4px;
+  color: #62A5D9;
+  line-height: 20px;
+  background: white;
+}
+.TVTextBox:hover, .TVBigBox:hover, .TVLocationBox:hover {
+  box-shadow: 0px 14px 36px rgba(0, 20, 122, 0.15), 0px 2px 4px rgba(206, 103, 190, 0.11);
+  border-radius: 4px;
+}
+.TVWideForm .TVLocationBox {
+  margin: 0;
+  padding: 8px 10px;
+  color: #62A5D9;
+}
+.TVWideForm .TVLocationBox .TVContent {
+  font-family: Tourvisor,Trebuchet MS,arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  text-decoration: none;
+}
+.TVWideForm .TVMainForm .TVFormBlock {
+  margin-right: 8px;
+}
+.TVLocationBox .TVContent:after {
+  top: -2px;
+}
+.TVSearchButtonBlock {
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+}
+.TVSearchButtonBlock .TVSearchButton {
+  width: 160px;
+  margin-left: -50%;
+  color: white;
+  line-height: 24px;
+      font-family: Tourvisor,Trebuchet MS,arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  background: linear-gradient(0deg, rgba(243, 58, 94, 0.93), rgba(243, 58, 94, 0.93)), linear-gradient(89.93deg, #49C7F8 -3.83%, #7B9BE1 1.83%, #953DFF 36.03%, #9D1A98 98.71%);
+  box-shadow: 0px 8px 28px rgba(116, 16, 34, 0.06), 0px 14px 34px rgba(41, 36, 98, 0.43), 0px 4px 4px rgba(194, 0, 198, 0.21);
+  border-radius: 4px;
+}
