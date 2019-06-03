@@ -10,7 +10,7 @@ https://cabinet.tourvisor.ru/module/code/search/0;
   min-height: 108px;
   box-shadow: 0px 14px 34px rgba(36, 65, 98, 0.43), 0px 4px 4px rgba(0, 67, 198, 0.21);
   border-radius: 8px;
-  box-shadow: 0px 14px 34px rgba(36, 65, 98, 0.43), 0px 4px 4px rgba(0, 67, 198, 0.21), inset 0 -2px #7ea4d3;
+  box-shadow: 0px 14px 34px rgba(36, 65, 98, 0.43), 0px 4px 4px rgba(0, 67, 198, 0.21), inset 0 -2px rgba(156, 194, 227, 0.24);
   border-radius: 8px;
   /* background: radial-gradient(600px at 46.57% 131.66%, #DDBFBF 0%, #66ACDF 59.21%, #8AD8F1 100%); */
   background: radial-gradient(farthest-corner at 55% 158%, #DDBFBF 0%, #66ACDF 59.21%, #8AD8F1 100%);
@@ -32,6 +32,7 @@ https://cabinet.tourvisor.ru/module/code/search/0;
 .TVSearchButton {
   text-shadow: none;
 }
+
 .TVSearchingForm .TVLabel {
   text-shadow: none;
   font-size: 14px;
@@ -81,8 +82,7 @@ https://cabinet.tourvisor.ru/module/code/search/0;
   line-height: 24px;
   font-size: 16px;
   font-weight: 500;
-  background: linear-gradient(0deg, rgba(243, 58, 94, 0.93), rgba(243, 58, 94, 0.93)), linear-gradient(89.93deg, #49C7F8 -3.83%, #7B9BE1 1.83%, #953DFF 36.03%, #9D1A98 98.71%);
-  box-shadow: 0px 8px 28px rgba(116, 16, 34, 0.06), 0px 14px 34px rgba(41, 36, 98, 0.43), 0px 4px 4px rgba(194, 0, 198, 0.21), inset 0 -2px 0 0 #bb4c4c;
+  box-shadow: 0px 8px 28px rgba(116, 16, 34, 0.06), 0px 14px 34px rgba(36, 45, 98, 0.58), 0px 4px 4px rgba(234, 0, 70, 0.33), inset 0 -2px 0 0 #c22952;
 
   /* button-red mixin */
   border: 0;
@@ -99,6 +99,19 @@ https://cabinet.tourvisor.ru/module/code/search/0;
   background: linear-gradient(var(--red),#d42360) no-repeat;
   /*box-shadow: 0 7px 13px -3px rgba(66, 35, 35, 0.3), 0 2px 4px 0 rgba(66, 35, 35, 0.4), inset 0 -2px 0 0 #bb4c4c;*/
   border-radius: 4px;
+}
+
+.TVSearchButtonBlock .TVSearchButton:before {
+  position: absolute;
+  top: 9px;
+  right: -13px;
+  width: 29.5px;
+  height: 29.5px;
+  border-top: 2px solid #c22952;
+  border-radius: 4px;
+  transform: rotate(134deg) skewX(-10deg) skewY(-10deg);
+  background: linear-gradient(45deg, var(--red),#d42360) no-repeat;
+  content: '';
 }
 
 
