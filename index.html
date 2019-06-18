@@ -7,11 +7,11 @@
 
 <header id="site-header" class="absolute z-1 flex-row-center mt2 w-full">
   <div class="container flex-row-top mt-4">
-    <a class="mr-4 flex-0-1 mt-0.5" alt="Davinci Tour" href="/"><img src="./assets/logo-white.svg" width="200"/></a>
+    <a class="mr-4 flex-0-1 mt-0.5 w-auto" alt="Davinci Tour" href="/"><img src="./assets/logo-white.svg" width="200"/></a>
 
     <div id="site-menu" class="flex-column-stretch flex-1-1">
       <nav id="menu-primary" class="flex-row-top justify-between mb-1">
-        <a class="link active f-bold white b-red hover:b-red title bb-3">Поиск тура</a>
+        <a id="link1" class="link active f-bold white b-red hover:b-red title bb-3">Поиск тура</a>
         <a class="link white b-white-30 hover:b-red title bb-3">Горящие туры</a>
         <a class="link white b-white-30 hover:b-red title bb-3">Спецпредложения</a>
         <a class="link white b-white-30 hover:b-red title bb-3">Отдых с детьми</a>
@@ -27,6 +27,7 @@
         <a class="link white b-white-30 hover:b-red title bb-3">Авиакассы</a>
       </nav>
     </div>
+
   </div>
 </header>
 
@@ -36,7 +37,7 @@
     <header id="intro-title" class="title absolute white t-20">
       <h1 class="h1 mb-2">
         <small class="fs-22 text-shadow-1 white f-lower f-tracked ml-1">Отдых с детьми</small><br>
-        <big class="fs-72 text-shadow-1 white mt--2 lh-9">На отлично</big>
+        <big class="fs-64 text-shadow-1 white mt--2 lh-9 f-upper fw-800">На отлично</big>
       </h1>
     </header>
 
@@ -48,9 +49,9 @@
         <span class="f-title f-normal f-bold f-18">Санкт-Петербург</span>
         <dl class="p-0 m-0 grid-2x2 f-normal">
           <dd class="grid-area-1x1 grid-place-lb m-0 fs-14">м. Озерки</dd>
-          <dt class="grid-area-2x1"><a class="white f-bold fs-18" href="tel:+74546818">454-68-18</a></dt>
+          <dt class="grid-area-2x1"><a class="white f-bold fs-18 text-clear" href="tel:+74546818">454-68-18</a></dt>
           <dd class="grid-area-1x2 grid-place-lb m-0 fs-14">пл. Восстания</dd>
-          <dt class="grid-area-2x2"><a class="white f-bold fs-18" href="tel:+77027881">702-78-81</a></dt>
+          <dt class="grid-area-2x2"><a class="white f-bold fs-18 text-clear" href="tel:+77027881">702-78-81</a></dt>
         </dl>
       </address>
     </div>
@@ -64,6 +65,11 @@
     <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
     <link rel="stylesheet" href="./assets/search.css"/>
   </div>
+
+  <script type="text/javascript">
+    // add icons to inputs
+    $('.TVLocationBox', el => el.prepend(h`<i class="material-icons fs-16 mr-1"></i>`))
+  </script>
 </search>
 
 

@@ -23,6 +23,7 @@
 .fs-108, .imperial { font-size: 108px; }
 .fs-100 { font-size: 100px; }
 .fs-96 { font-size: 96px; }
+.fs-92 { font-size: 92px; }
 .fs-88, .triple-canon { font-size: 88px; }
 .fs-84 { font-size: 84px; }
 .fs-82 { font-size: 82px; }
@@ -96,9 +97,12 @@
 .f-italic { font-style: italic; }
 .f-normal { font-style: normal; }
 .f-oblique { font-style: oblique; }
+.f-lighter { font-weight: lighter; }
 .f-light { font-weight: light; }
 .f-regular { font-weight: normal; }
 .f-bold { font-weight: bold; }
+.f-bolder { font-weight: bolder; }
+.f-black { font-weight: 900; }
 .fw-100 { font-weight: 100; }
 .fw-200 { font-weight: 200; }
 .fw-300 { font-weight: 300; }
@@ -109,17 +113,17 @@
 .fw-800 { font-weight: 800; }
 .fw-900 { font-weight: 900; }
 
-.f-caps {
+.f-caps, .f-capitalize, .f-cap {
   font-variant: small-caps;
 }
-.f-upper {
+.f-upper, .f-uppercase, .f-up {
   text-transform: uppercase;
 }
-.f-lower {
+.f-lower, .f-lowercase, .f-low {
   text-transform: lowercase;
 }
-.f-tracked { letter-spacing:  .05em; }
-.f-tight { letter-spacing: -.05em; }
+.f-tracked, .track { letter-spacing:  .05em; }
+.f-tight, .f-dense { letter-spacing: -.05em; }
 .f-mega { letter-spacing:  .25em; }
 
 
@@ -148,7 +152,6 @@
 .text-justify {
   text-align: justify;
 }
-
 .text-ellipsis {
   white-space: nowrap;
   overflow: hidden;
@@ -216,10 +219,10 @@
 .flex-column-baseline { display:flex; flex-direction: column; align-items: baseline; }
 .flex-column-stretch { display:flex; flex-direction: column; align-items: stretch; }
 
-.flex-1-1 { flex: 1 1 auto; }
-.flex-0-1 { flex: 0 1 auto; }
-.flex-1-0 { flex: 1 0 auto; }
-.flex-0-0 { flex: 0 0 auto; }
+.flex-1-1 { flex-grow: 1; flex-shring: 1; }
+.flex-0-1 { flex-grow: 0; flex-shring: 1; }
+.flex-1-0 { flex-grow: 1; flex-shring: 0; }
+.flex-0-0 { flex-grow: 0; flex-shring: 0; }
 
 .justify-center { justify-content: center; }
 .justify-start { justify-content: flex-start; }
@@ -236,7 +239,7 @@
 .block { display: block; }
 .inline-block { display: inline-block; }
 
-.v-base { vertical-align: baseline; }
+.v-base, .v-baseline { vertical-align: baseline; }
 .v-middle { vertical-align: middle; }
 .v-top { vertical-align: top; }
 .v-bottom { vertical-align: bottom; }

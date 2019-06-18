@@ -51,7 +51,7 @@ body {
   background-size: fit;
   background-position: center;
   background-repeat: no-repeat;
-  background: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsla(0, 8%, 98%, 0.88) 100%), url('./assets/world.svg');
+  background: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsla(0, 8%, 98%, 0.88) 100%), url('./world.svg');
 }
 
 
