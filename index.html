@@ -57,6 +57,7 @@
   </div>
 </section>
 
+
 <search id="search" class="relative">
   <div class="container mb--8">
     <div class="tv-search-form mt--8" tv-type="8" tv-theme="theme1" tv-resultinwindow="0" tv-departure="-1"></div>
@@ -64,6 +65,7 @@
     <link rel="stylesheet" href="./search.css"/>
   </div>
 </search>
+
 
 <section id="testimonials" class="pt-8 pb-8">
   <div class="container mt-8">
@@ -99,6 +101,7 @@
 
 <section id="countries-chart">
 </section>
+
 
 
 <section id="tags" class="container pb-8 pt-4">
@@ -265,6 +268,42 @@
 
 <section id="features" class="container">
 </section>
+
+
+<section class='plane-trace-hr container my-4'>
+  <svg class="plane-trace w-100% block" version="1.1" viewBox="30 -20 1300 200">
+    <path fill="transparent" stroke="#E2E8F9" stroke-width="3" stroke-dasharray="10,15" d="M2 79.3073C73.5434 -16.8378 219.812 -20.4579 679.5 51.3073C907.491 80.0728 1047.46 88.1554 1243.5 23.3072" class="path"></path>
+    <path id="plane-1" class="plane" fill-rule="evenodd" clip-rule="evenodd" fill="#ACC7E5" transform="translate(-10 -20)" d="M16.9718 34.4288L18.6795 34.4288L21.7845 29.9266L23.4146 30.0042C24.3461 30.0042 25.1224 29.228 25.1224 28.2965C25.0447 27.5978 24.579 26.9768 23.958 26.8216L26.7525 22.7851L34.4373 23.018C38.3962 22.9404 39.0172 20.3011 39.0172 19.9906C39.0172 19.5249 38.2409 17.0409 34.3597 17.0409L26.7525 17.3514L23.958 13.3149C24.6566 13.0821 25.1224 12.4611 25.0447 11.7624C25.0447 10.8309 24.3461 10.1323 23.4146 10.1323L21.7845 10.0547L18.6019 5.6301L17.0494 5.6301L19.2229 17.5843L10.529 17.8948L7.42397 13.5478L6.72535 13.4702L6.72535 18.2829C6.10435 18.5934 5.71623 19.292 5.71623 19.913C5.63861 20.7669 6.10435 21.3879 6.72535 21.8536L6.72535 26.5111L7.50159 26.5111L10.4513 22.1641L19.2229 22.5522L16.9718 34.4288Z"/>
+  </svg>
+</section>
+<section class='plane-trace-hr container my-4'>
+  <svg class="plane-trace w-100% block" version="1.1" viewBox="30 -20 1300 200">
+    <path fill="transparent" stroke="#E2E8F9" stroke-width="3" stroke-dasharray="10,15" d="M1 1C229 51 439 60.7968 671 74.8984C903 89 1109 103 1333 159" class="path"></path>
+    <path class="plane" id="plane-2" fill-rule="evenodd" clip-rule="evenodd" fill="#ACC7E5" transform="translate(-10 -20)" d="M16.9718 34.4288L18.6795 34.4288L21.7845 29.9266L23.4146 30.0042C24.3461 30.0042 25.1224 29.228 25.1224 28.2965C25.0447 27.5978 24.579 26.9768 23.958 26.8216L26.7525 22.7851L34.4373 23.018C38.3962 22.9404 39.0172 20.3011 39.0172 19.9906C39.0172 19.5249 38.2409 17.0409 34.3597 17.0409L26.7525 17.3514L23.958 13.3149C24.6566 13.0821 25.1224 12.4611 25.0447 11.7624C25.0447 10.8309 24.3461 10.1323 23.4146 10.1323L21.7845 10.0547L18.6019 5.6301L17.0494 5.6301L19.2229 17.5843L10.529 17.8948L7.42397 13.5478L6.72535 13.4702L6.72535 18.2829C6.10435 18.5934 5.71623 19.292 5.71623 19.913C5.63861 20.7669 6.10435 21.3879 6.72535 21.8536L6.72535 26.5111L7.50159 26.5111L10.4513 22.1641L19.2229 22.5522L16.9718 34.4288Z"/>
+  </svg>
+</section>
+<style>
+.plane {
+  offset-distance: 0%;
+  animation: plane 4s linear;
+}
+#plane-1{
+  offset-path: path('M2 79.3073C73.5434 -16.8378 219.812 -20.4579 679.5 51.3073C907.491 80.0728 1047.46 88.1554 1243.5 23.3072');
+}
+#plane-2{
+  offset-path: path('M1 1C229 51 439 60.7968 671 74.8984C903 89 1109 103 1333 159');
+}
+@keyframes plane {
+  from {
+    offset-distance: 0%;
+  }
+  to {
+    offset-distance: 100%;
+  }
+}
+</style>
+
+
 
 
 <footer id="footer" class="relative pb-4">

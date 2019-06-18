@@ -185,6 +185,21 @@ hr, .hr {
   padding: 0;
 }
 
+.o-hidden {
+  overflow: hidden
+}
+.o-visible {
+  overflow: visible;
+}
+.o-scroll {
+  overflow: scroll;
+}
+.ox-scroll {
+  overflow-x: scroll;
+}
+.oy-scroll {
+  overflow-x: scroll;
+}
 
 
 /** Typyons */
