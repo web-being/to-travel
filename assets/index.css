@@ -27,7 +27,7 @@ body {
 #intro {
   height: 400px;
   background-color: #70b9e4;
-  background-image: url('./assets/intro.webp');
+  background-image: url('./intro.webp');
 }
 
 #intro-title {
