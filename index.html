@@ -68,7 +68,7 @@
 
   <script type="text/javascript">
     // add icons to inputs
-    $('.TVLocationBox', el => el.prepend(h`<i class="material-icons fs-16 mr-1"></i>`))
+    html('.TVLocationBox', `<i class="material-icons fs-16 mr-1"></i> ${el => el.childNodes}`)
   </script>
 </search>
 
@@ -223,7 +223,7 @@
   <hr class="hr"/>
 
   <div class="flex-row-top mt-4">
-    <div class="br-3 b-near-white pr-5 mr-2">
+    <div class="br-3 b-near-white pr-5 mr-2 w-75%">
       <h1>Первый уровень</h1>
       <p>Контентишко пергого уровня, в основном заполнитель пространства, ничего личного, не стоит принимать близко к сердцу.</p>
 
@@ -263,8 +263,46 @@
       </div>
     </div>
 
-    <div class="w-25%">
-      Countries
+    <div class="w-25% pl-4">
+      <h5 class="h5">Топ стран</h5>
+      <ul class="list">
+        <li>
+          <a href="#tunisia" class="flex-row-center text-clear hover:slide">
+            <div class="w-8 h-8 mt-2 mb-1 mr-2 bg-cover radius-0.5 elevation-0" style="background-image: url(./assets/tunisia-small.png)"></div>
+            <p class="m-0">
+              <strong class="c-title">Тунис</strong><br/>
+              <span>От 16 000 ₽</span>
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="#dominicana" class="flex-row-center text-clear hover:slide">
+            <div class="w-8 h-8 mt-2 mb-1 mr-2 bg-cover radius-0.5 elevation-0" style="background-image: url(./assets/dominicana-small.png)"></div>
+            <p class="m-0">
+              <strong class="c-title">Доминикана</strong><br/>
+              <span>От 34 000 ₽</span>
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="#uae" class="flex-row-center text-clear hover:slide">
+            <div class="w-8 h-8 mt-2 mb-1 mr-2 bg-cover radius-0.5 elevation-0" style="background-image: url(./assets/uae-small.png)"></div>
+            <p class="m-0">
+              <strong class="c-title">ОАЭ</strong><br/>
+              <span>От 21 000 ₽</span>
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="#thailand" class="flex-row-center text-clear hover:slide">
+            <div class="w-8 h-8 mt-2 mb-1 mr-2 bg-cover radius-0.5 elevation-0" style="background-image: url(./assets/thailand-small.png)"></div>
+            <p class="m-0">
+              <strong class="c-title">Таиланд</strong><br/>
+              <span>От 12 000 ₽</span>
+            </p>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 
