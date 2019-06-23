@@ -134,7 +134,7 @@
 .text-66 { max-width: 30em; }
 
 /* Measure is limited to ~45 characters */
-.text-45 { max-width: 20em; }
+.text-45 { max-width: 20em; line-height: 1.41; }
 
 /* Book paragraph style - paragraphs are indented with no vertical spacing. */
 .text-indent {
@@ -253,12 +253,12 @@
 .c-title { color: var(--title) }
 .c-text { color: var(--text) }
 
-.elevation-0 { box-shadow:0px 1px 4px 2px rgba(93,100,148,.15) }
+.elevation-0 { box-shadow:0px 1px 2px 1px rgba(93,100,148,.15) }
 .elevation-1 { box-shadow:0px 1px 4px 2px rgba(93,100,148,.15) }
 .elevation-2 { box-shadow:0px 2px 8px 2px rgba(93,100,148,.15) }
 .elevation-3 { box-shadow: 0 5px 15px 0 rgba(37,44,97,.15), 0 2px 4px 0 rgba(93,100,148,.2); }
 .elevation-4 { box-shadow: 0 7px 14px -3px rgba(93,100,148,.15), 0 2px 4px 0 rgba(45,35,66,0.4), inset 0 -2px 0 0 #cfd1e3; }
-.elevation-5 { box-shadow:4px 4px 8px 0px rgba(93,100,148,.15) }
+.elevation-5 { box-shadow: 0px 25.5769px 46.0385px rgba(2, 21, 122, 0.1), 0px 2.55769px 5.11538px rgba(30, 47, 206, 0.08); }
 
 .text-shadow-1 { text-shadow:0px 0px 4px rgba(93,100,148,.15) }
 .text-shadow-2 { text-shadow:0px 0px 8px rgba(93,100,148,.15) }
