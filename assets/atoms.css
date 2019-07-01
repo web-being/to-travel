@@ -231,6 +231,14 @@
 .justify-around { justify-content: space-around; }
 .justify-evenly { justify-content: space-evenly; }
 
+.self-auto { align-self: auto; }
+.self-start { align-self: flex-start; }
+.self-end { align-self: flex-end; }
+.self-stretch { align-self: stretch; }
+.self-center { align-self: center; }
+.self-baseline { align-self: baseline; }
+
+
 /** Position, p-, pos- */
 .absolute { position: absolute; }
 .fixed { position: fixed; }
