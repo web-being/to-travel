@@ -98,6 +98,24 @@ body {
   font-weight: bold;
 }
 
+.feature {
+  transition: transform 0.15s ease;
+  will-change: transform;
+}
+.feature:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(93.33deg, #177DC8 2.82%, #293DB6 97.5%);
+  color: var(--white);
+}
+.feature:hover .feature-title {
+  color: var(--white);
+}
+.feature:hover .feature-desc {
+  color: var(--white);
+}
+.feature:hover svg {
+  fill: var(--white);
+}
 
 
 #footer-logo {
