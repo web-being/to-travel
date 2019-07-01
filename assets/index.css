@@ -118,6 +118,11 @@ body {
 }
 
 
+.drop-element {
+  z-index: 4!important;
+}
+
+
 #footer-logo {
 }
 
