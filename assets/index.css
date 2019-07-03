@@ -12,7 +12,6 @@
   --light-blue: #85c6f6;
   --blue: #5b88d1;
   --dark-gray:  #2F4253;
-  --dark-gray:  #2F4253;
   --near-white: #F2F3F4;
   --gray: #849CA4;
 }
@@ -32,6 +31,11 @@ body {
   height: 400px;
   background-color: #70b9e4;
   background-image: url('./intro.webp');
+}
+#outro {
+  height: 400px;
+  background-size: auto, cover;
+  background: linear-gradient(to right, rgba(91, 69, 244, 0.17), rgba(238, 160, 73, 0.76)), url(./outro.webp) center no-repeat;
 }
 
 #intro-title {
