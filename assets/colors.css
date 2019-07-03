@@ -75,6 +75,15 @@
   --washed-yellow:  #fffceb;
   --washed-red:  #ffdfdf;
 
+  --cool: #ACC7E5;
+  --warm: #AAAA00;
+}
+
+.cool {
+  color: var(--cool);
+}
+.warm {
+  color: var(--warm);
 }
 
 /*
