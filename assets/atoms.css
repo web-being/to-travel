@@ -129,13 +129,12 @@
 .f-mega { letter-spacing:  .25em; }
 
 
-/* Measure is limited to ~80 characters */
-.text-80 { max-width: 34em; }
-
-/* Measure is limited to ~66 characters */
+/* Text multiplier is .45 */
+.text-130 { max-width: 58em; }
+.text-120 { max-width: 54em; }
+.text-100 { max-width: 45em; }
+.text-80 { max-width: 36em; }
 .text-66 { max-width: 30em; }
-
-/* Measure is limited to ~45 characters */
 .text-45 { max-width: 20em; line-height: 1.41; }
 
 /* Book paragraph style - paragraphs are indented with no vertical spacing. */
