@@ -6,6 +6,7 @@
 
   /*--red: #FF0039;*/
   --red: #F33A5E;
+  --light-red: #F57C94;
   --dark-red: #d42360;
   --dark-blue: #1669C0;
   --light-blue: #85c6f6;
@@ -72,7 +73,6 @@ body {
 
 .link {
   text-decoration: none;
-  font-family: var(--display);
   display: inline-block;
 }
 

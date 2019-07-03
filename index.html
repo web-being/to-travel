@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:500,700,800|Source+Sans+Pro:400,400i,700&display=swap&subset=cyrillic"/>
 <link rel="stylesheet" href="./assets/remedy.css"/>
-<link rel="stylesheet" href="./assets/base.css"/>
+<link rel="stylesheet" href="./assets/molecules.css"/>
 <link rel="stylesheet" href="./assets/index.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether-drop/1.4.2/css/drop-theme-arrows.min.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
@@ -10,13 +10,13 @@
 
 
 <section id="top-content" class="page-section py-8">
-  <div class="container">
-    <h2 class="h1 mt-8 mb-0">Заголовок страницы</h2>
-    <nav class="breadcrumbs mt-2 cool fw-600 mb-3">
-      <a href="#" class="link cool b-red hover:b-red title lh-4 bb-3 mr-2">Спецпредложения</a>
+  <div class="container mt-10">
+    <nav class="breadcrumbs cool fw-600 mb-2">
+      <a href="#" class="link cool b-light-red hover:b-red title lh-5 bb-3 mr-2">Спецпредложения</a>
       /
-      <a href="#" class="link cool bb-none title lh-4 ml-2">Заголовок страницы</a>
+      <a href="#" class="link cool bb-none title lh-5 ml-2">Заголовок страницы</a>
     </nav>
+    <h2 class="h1 mt-0 mb-0">Заголовок страницы</h2>
     <p>Уже который год, не смотря на кризисы и инфляцию, с конца января по май в турфирмах кипит работа – клиенты бронируют свой летний отдых.   Почему же, несмотря на неуклонное ежегодное повышение цен, периодическое появление горящих туров непосредственно перед вылетом,  туристы все равно продолжают считать Раннее бронирование выгодным.</p>
   </div>
 </section>
@@ -146,9 +146,28 @@
     </div>
 
     <footer class="flex-row-bottom justify-center mt-4">
-      <a class="link h-6 lh-6 b-blue dark-gray mr-4 f-bold hover:b-red" href="">Читать все отзывы</a>
-      <button class="button button-blue">Оставить отзыв</button>
+      <a class="link h-6 lh-6 b-blue dark-gray mr-4 f-bold bb-3 hover:b-red f-display" href="">Читать все отзывы</a>
+      <button class="button button-blue f-display fs-17">Оставить отзыв</button>
     </footer>
+  </div>
+</section>
+
+
+<section id="news" class="page-section">
+  <div class="container">
+    <h2 class="h2">Новости с полей</h2>
+    <div class="flex-row-top">
+      <article class="w-25% news-item">
+        <div class="w-8 h-8 mt-2 mb-1 mr-2 bg-cover radius-0.5 elevation-0" style="background-image: url(./assets/tunisia-small.png)"></div>
+        <time datetime="10-04-2019">10 апреля 2019</time>
+        <p class="m-0">
+          Уже который год, не смотря на кризисы
+          и инфляцию, с конца января по май
+          в турфирмах кипит работа – клиенты бронируют свой летний отдых.
+          <a href="#tunisia" class="link mt-1 f-body b-light-gray lh-4 bb-3">Подробнее</a>
+        </p>
+      </article>
+    </div>
   </div>
 </section>
 
