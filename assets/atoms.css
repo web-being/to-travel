@@ -293,6 +293,7 @@
 .bg-40\% { background-repeat:no-repeat;  background-position: 40%; }
 .bg-contain { background-repeat:no-repeat;  background-size: contain; }
 .bg-cover { background-repeat:no-repeat;  background-size: cover; }
+.bg-none { background: none; }
 
 .c-title { color: var(--title) }
 .c-text { color: var(--text) }

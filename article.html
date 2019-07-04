@@ -18,9 +18,74 @@
 </script>
 
 
+
+<section class="page-section bg-none order--1 absolute z-1 flex-row-center mt2 w-full pb-4">
+  <div class="container flex-row-top mt-4">
+    <a class="mr-4 flex-0-1 mt-0.5 w-auto" alt="Davinci Tour" href="/"><img src="./assets/logo-color.svg" width="200"/></a>
+
+    <div id="site-menu" class="flex-column-stretch flex-1-1">
+      <nav id="menu-primary" class="flex-row-top justify-between mb-1">
+          <a id="link1" dropdown="#popover1" class="link active f-bold dark-gray b-red hover:b-red title bb-3">Поиск тура</a>
+          <div id="popover1" class="bg-white radius-0.5 z-999 pt-3 pb-3 px-4 elevation-5 flex-column-left" dropdown-content>
+            <a class="link dark-gray b-light-gray mb-1.5 hover:b-red title bb-3">Европа</a>
+            <a class="link dark-gray b-light-gray mb-1.5 hover:b-red title bb-3">Россия и СНГ</a>
+            <a class="link dark-gray b-light-gray mb-1.5 hover:b-red title bb-3">Автобусные туры</a>
+            <a class="link dark-gray b-light-gray mb-1.5 hover:b-red title bb-3">Загородный отдых</a>
+            <a class="link dark-gray b-light-gray mb-1.5 hover:b-red title bb-3">Круизы</a>
+            <a class="link dark-gray b-light-gray mb-1.5 hover:b-red title bb-3">Авиакассы</a>
+          </div>
+        <a dropdown="#popover2" class="link dark-gray b-white-30 hover:b-red title bb-3">Горящие туры</a>
+          <div id="popover2" class="bg-white radius-0.5 z-999 pt-3 pb-3 px-4 elevation-5 flex-column-left" dropdown-content>
+            <a class="link dark-gray b-light-gray mb-1.5 hover:b-red title bb-3">A</a>
+            <a class="link dark-gray b-light-gray mb-1.5 hover:b-red title bb-3">B</a>
+            <a class="link dark-gray b-light-gray mb-1.5 hover:b-red title bb-3">C</a>
+          </div>
+        <a dropdown="#popover" class="link dark-gray b-white-30 hover:b-red title bb-3">Спецпредложения</a>
+        <a dropdown="#popover" class="link dark-gray b-white-30 hover:b-red title bb-3">Отдых с детьми</a>
+        <a dropdown="#popover" class="link dark-gray b-white-30 hover:b-red title bb-3">Страны</a>
+        <a dropdown="#popover" class="link dark-gray b-white-30 hover:b-red title bb-3">Европа</a>
+      </nav>
+      <nav id="menu-secondary" class="flex-row-top justify-between fs-14">
+        <a dropdown="#popover" class="link dark-gray b-white-30 hover:b-red title bb-3">Европа</a>
+        <a dropdown="#popover" class="link dark-gray b-white-30 hover:b-red title bb-3">Россия и СНГ</a>
+        <a dropdown="#popover" class="link dark-gray b-white-30 hover:b-red title bb-3">Автобусные туры</a>
+        <a dropdown="#popover" class="link dark-gray b-white-30 hover:b-red title bb-3">Загородный отдых</a>
+        <a dropdown="#popover" class="link dark-gray b-white-30 hover:b-red title bb-3">Круизы</a>
+        <a dropdown="#popover" class="link dark-gray b-white-30 hover:b-red title bb-3">Авиакассы</a>
+      </nav>
+    </div>
+  <script type="text/javascript">
+    // init each dropdown
+    [...document.querySelectorAll('[dropdown]')].forEach(el => {
+      let selector = el.getAttribute('dropdown')
+      let content = document.querySelector(selector)
+      if (!content) return
+      drop = new Drop({
+        target: el,
+        content,
+        position: 'bottom left',
+        openOn: 'hover'
+      })
+    })
+  </script>
+</section>
+
+
 <main>
+  <section id="top-content" class="page-section mt-8 py-4">
+    <div class="container mt-10">
+      <nav class="breadcrumbs cool fw-600 mb-4 fs-13">
+        <a href="#" class="link cool b-light-red hover:b-red title lh-5 inline-block bb-3 mr-2">Спецпредложения</a>
+        /
+        <a href="#" class="link cool bb-none title lh-5 inline-block ml-2">Заголовок страницы</a>
+      </nav>
+      <h2 class="h1 dark-gray mt-0 mb-0">Заголовок страницы</h2>
+      <p class="text-120">Уже который год, не смотря на кризисы и инфляцию, с конца января по май в турфирмах кипит работа – клиенты бронируют свой летний отдых.   Почему же, несмотря на неуклонное ежегодное повышение цен, периодическое появление горящих туров непосредственно перед вылетом,  туристы все равно продолжают считать Раннее бронирование выгодным.</p>
+    </div>
+  </section>
+
   <article class="container">
-    <figure>
+    <figure class="m-0 mx-0 my-6">
       <img
         id="zoom-default"
         src="./images/image-1.jpg"
@@ -37,7 +102,7 @@
       doloremque sit voluptatum odio maiores provident consequuntur accusantium saepe.
     </p>
 
-    <figure>
+    <figure class="m-0 mx-0 my-6">
       <img
         id="zoom-margin"
         src="./images/image-2.jpg"
@@ -52,7 +117,7 @@
       blanditiis error beatae vel non vero dolor nemo. Animi nemo quisquam ducimus!
     </p>
 
-    <figure>
+    <figure class="m-0 mx-0 my-6">
       <img
         id="zoom-background"
         src="./images/image-3.jpg"
@@ -67,7 +132,7 @@
       voluptatum enim quidem? Rem, minima laboriosam hic! Id.
     </p>
 
-    <figure class="pull-right">
+    <figure class="m-0 mx-0 my-6" class="pull-right">
       <img
         id="zoom-scrollOffset"
         src="./images/image-4.jpg"
@@ -101,7 +166,7 @@
       tenetur impedit repudiandae quos.
     </p>
 
-    <figure>
+    <figure class="m-0 mx-0 my-6">
       <img
         id="zoom-trigger"
         src="./images/image-6.jpg"
@@ -119,7 +184,7 @@
       reprehenderit accusantium quasi a autem neque asperiores, tenetur impedit repudiandae quos.
     </p>
 
-    <figure>
+    <figure class="m-0 mx-0 my-6">
       <img
         id="zoom-detach"
         src="./images/image-7.jpg"
@@ -130,3 +195,141 @@
 
   </article>
 </main>
+
+
+
+<footer id="footer" class="page-section bg-cover bg-center relative pb-4 pt-8">
+  <div class="container relative">
+    <div class="flex-row-top">
+      <a id="footer-logo" class="mr-4"><img width=200 src="./assets/logo-color.svg"/></a>
+
+      <div class="flex-row-top">
+        <nav>
+          <h6 class="h6 dark-gray m-0">Компания</h4>
+          <ul class="list mr-4">
+            <li><a class="text-clear" href="">Контакты</a>
+            <li><a class="text-clear" href="">О нас</a>
+            <li><a class="text-clear" href="">Новости</a>
+            <li><a class="text-clear" href="">Отзывы</a>
+            <li><a class="text-clear" href="">Пресса</a>
+            <li><a class="text-clear" href="">Сертификаты</a>
+          </ul>
+        </nav>
+
+        <nav>
+          <h6 class="h6 dark-gray m-0">Порядок работы</h4>
+          <ul class="list mr-4">
+            <li><a class="text-clear" href="">Как купить тур</a>
+            <li><a class="text-clear" href="">Типовой договор</a>
+            <li><a class="text-clear" href="">Способы оплаты</a>
+            <li><a class="text-clear" href="">Оплата через сайт</a>
+            <li><a class="text-clear" href="">Основные термины в туризме</a>
+            <li><a class="text-clear" href="">Основные законы в туризме</a>
+          </ul>
+        </nav>
+
+        <nav>
+          <h6 class="h6 dark-gray m-0">Смотрите также</h4>
+          <ul class="list mr-4">
+            <li><a class="text-clear" href="">VIP-сервис в аэропортах</a>
+            <li><a class="text-clear" href="">Подарочные сертификаты</a>
+            <li><a class="text-clear" href="">Аренда апартаментов</a>
+            <li><a class="text-clear" href="">Основные термины в туризме</a>
+            <li><a class="text-clear" href="">Основные законы в туризме</a>
+            <li><a class="text-clear" href="">Статьи о туризме</a>
+          </ul>
+        </nav>
+
+        <div class="flex-column-left">
+          <div class="site-footer-social">
+            <h6 class="h6 dark-gray m-0 mb-2">Будьте с нами</h6>
+            <!-- Sharingbutton Facebook -->
+            <a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Fsharingbuttons.io" target="_blank" rel="noopener" aria-label="">
+              <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm3.6 11.5h-2.1v7h-3v-7h-2v-2h2V8.34c0-1.1.35-2.82 2.65-2.82h2.35v2.3h-1.4c-.25 0-.6.13-.6.66V9.5h2.34l-.24 2z"/></svg>
+                </div>
+              </div>
+            </a>
+
+            <!-- Sharingbutton Twitter -->
+            <a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?text=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.&amp;url=http%3A%2F%2Fsharingbuttons.io" target="_blank" rel="noopener" aria-label="">
+              <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm5.26 9.38v.34c0 3.48-2.64 7.5-7.48 7.5-1.48 0-2.87-.44-4.03-1.2 1.37.17 2.77-.2 3.9-1.08-1.16-.02-2.13-.78-2.46-1.83.38.1.8.07 1.17-.03-1.2-.24-2.1-1.3-2.1-2.58v-.05c.35.2.75.32 1.18.33-.7-.47-1.17-1.28-1.17-2.2 0-.47.13-.92.36-1.3C7.94 8.85 9.88 9.9 12.06 10c-.04-.2-.06-.4-.06-.6 0-1.46 1.18-2.63 2.63-2.63.76 0 1.44.3 1.92.82.6-.12 1.95-.27 1.95-.27-.35.53-.72 1.66-1.24 2.04z"/></svg>
+                </div>
+              </div>
+            </a>
+
+            <!-- Sharingbutton E-Mail -->
+            <a class="resp-sharing-button__link" href="mailto:?subject=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.&amp;body=http%3A%2F%2Fsharingbuttons.io" target="_self" rel="noopener" aria-label="">
+              <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm8 16c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V8c0-1.1.9-2 2-2h12c1.1 0 2 .9 2 2v8z"/><path d="M17.9 8.18c-.2-.2-.5-.24-.72-.07L12 12.38 6.82 8.1c-.22-.16-.53-.13-.7.08s-.15.53.06.7l3.62 2.97-3.57 2.23c-.23.14-.3.45-.15.7.1.14.25.22.42.22.1 0 .18-.02.27-.08l3.85-2.4 1.06.87c.1.04.2.1.32.1s.23-.06.32-.1l1.06-.9 3.86 2.4c.08.06.17.1.26.1.17 0 .33-.1.42-.25.15-.24.08-.55-.15-.7l-3.57-2.22 3.62-2.96c.2-.2.24-.5.07-.72z"/></svg>
+                </div>
+              </div>
+            </a>
+
+            <!-- Sharingbutton WhatsApp -->
+            <a class="resp-sharing-button__link" href="whatsapp://send?text=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.%20http%3A%2F%2Fsharingbuttons.io" target="_blank" rel="noopener" aria-label="">
+              <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24"><path d="m12 0c-6.6 0-12 5.4-12 12s5.4 12 12 12 12-5.4 12-12-5.4-12-12-12zm0 3.8c2.2 0 4.2 0.9 5.7 2.4 1.6 1.5 2.4 3.6 2.5 5.7 0 4.5-3.6 8.1-8.1 8.1-1.4 0-2.7-0.4-3.9-1l-4.4 1.1 1.2-4.2c-0.8-1.2-1.1-2.6-1.1-4 0-4.5 3.6-8.1 8.1-8.1zm0.1 1.5c-3.7 0-6.7 3-6.7 6.7 0 1.3 0.3 2.5 1 3.6l0.1 0.3-0.7 2.4 2.5-0.7 0.3 0.099c1 0.7 2.2 1 3.4 1 3.7 0 6.8-3 6.9-6.6 0-1.8-0.7-3.5-2-4.8s-3-2-4.8-2zm-3 2.9h0.4c0.2 0 0.4-0.099 0.5 0.3s0.5 1.5 0.6 1.7 0.1 0.2 0 0.3-0.1 0.2-0.2 0.3l-0.3 0.3c-0.1 0.1-0.2 0.2-0.1 0.4 0.2 0.2 0.6 0.9 1.2 1.4 0.7 0.7 1.4 0.9 1.6 1 0.2 0 0.3 0.001 0.4-0.099s0.5-0.6 0.6-0.8c0.2-0.2 0.3-0.2 0.5-0.1l1.4 0.7c0.2 0.1 0.3 0.2 0.5 0.3 0 0.1 0.1 0.5-0.099 1s-1 0.9-1.4 1c-0.3 0-0.8 0.001-1.3-0.099-0.3-0.1-0.7-0.2-1.2-0.4-2.1-0.9-3.4-3-3.5-3.1s-0.8-1.1-0.8-2.1c0-1 0.5-1.5 0.7-1.7s0.4-0.3 0.5-0.3z"/></svg>
+                </div>
+              </div>
+            </a>
+
+            <!-- Sharingbutton VK -->
+            <a class="resp-sharing-button__link" href="http://vk.com/share.php?title=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.&amp;url=http%3A%2F%2Fsharingbuttons.io" target="_blank" rel="noopener" aria-label="">
+              <div class="resp-sharing-button resp-sharing-button--vk resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 6.352 5.15 11.5 11.5 11.5 6.352 0 11.5-5.148 11.5-11.5C23.5 5.65 18.352.5 12 .5zm8.11 16.82h-2.603c-.244 0-.48-.094-.658-.26l-1.98-1.862c-.118-.112-.276-.175-.438-.175-.355 0-.646.287-.646.643v1c0 .36-.292.654-.654.654h-1.655c-3.935 0-7.385-6.898-8.185-9.093-.018-.052-.028-.105-.028-.16.002-.247.204-.445.452-.445h2.637c.24 0 .456.14.556.355.57 1.42 1.31 2.764 2.2 4.004.126.14.304.217.49.214.357-.006.64-.3.63-.656-.014-.894-.034-1.958-.034-2.328 0-1.493-1.106-1.313-1.106-1.313.355-.49.94-.76 1.543-.717h2.182c.537 0 .974.435.974.972v3.093c0 .896.646 1.502 1.646-.43.37-.718 1.527-2.848 1.527-2.848.114-.214.337-.347.577-.347h2.9c1.323 0 .358 1.502-.175 2.21-.392.52-1.31 1.727-1.873 2.47-.267.353-.238.845.07 1.165 0 0 1.74 1.834 2.22 2.31.685.673.685 1.545-.57 1.545z"/></svg>
+                </div>
+              </div>
+            </a>
+
+            <!-- Sharingbutton Telegram -->
+            <a class="resp-sharing-button__link" href="https://telegram.me/share/url?text=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.&amp;url=http%3A%2F%2Fsharingbuttons.io" target="_blank" rel="noopener" aria-label="">
+              <div class="resp-sharing-button resp-sharing-button--telegram resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 23.5c6.35 0 11.5-5.15 11.5-11.5S18.35.5 12 .5.5 5.65.5 12 5.65 23.5 12 23.5zM2.505 11.053c-.31.118-.505.738-.505.738s.203.62.513.737l3.636 1.355 1.417 4.557a.787.787 0 0 0 1.25.375l2.115-1.72a.29.29 0 0 1 .353-.01L15.1 19.85a.786.786 0 0 0 .746.095.786.786 0 0 0 .487-.573l2.793-13.426a.787.787 0 0 0-1.054-.893l-15.568 6z" fill-rule="evenodd"/></svg>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div id="footer-phones">
+            <h6 class="h6 dark-gray mt-4 mb-2">Наши телефоны</h6>
+            <div class="flex-row-top z-1 dark-gray">
+              <div class="inline-block w-4 h-4 text-center">
+                <i class="material-icons v-middle lh-4 inline-block">phone_in_talk</i>
+              </div>
+              <address class="ml-2">
+                <span class="f-normal">Санкт-Петербург</span>
+                <dl class="p-0 m-0 grid-2x2 f-normal mt-1">
+                  <dd class="grid-area-1x1 m-0">м.&nbsp;Озерки</dd>
+                  <dt class="grid-area-2x1"><a class="dark-gray" href="tel:+74546818">454-68-18</a></dt>
+                  <dd class="grid-area-1x2 m-0">пл.&nbsp;Восстания</dd>
+                  <dt class="grid-area-2x2"><a class="dark-gray" href="tel:+77027881">702-78-81</a></dt>
+                </dl>
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-row-top">
+      <p id="requisites" class=" mr-4">
+        © ООО «Да Винчи» (2011 - 2019)
+        ИНН 9701074247 ОГРН 1177746448703
+        105082, г. Санкт-Петербург, ул. Фридриха Энгельса, д.75, стр.21, этаж 2, офис 203
+      </p>
+
+      <p id="legal">
+        Вся информация, размещённая на сайте, носит информационный характер и не является рекламой и публичной офертой. Копирование материалов без письменного согласия запрещено.
+        <a href="">Политика конфиденциальности (pdf)</a>
+      </p>
+    </div>
+
+    <div id="banks" class="flex-row-center">
+      <img width=40 src="./assets/visa.svg"/>
+      <img width=40 src="./assets/mastercard.svg"/>
+    </div>
+  </div>
+</footer>
+
