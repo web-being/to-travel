@@ -18,8 +18,9 @@
 </script>
 
 
-
-<section class="page-section bg-none order--1 absolute z-1 flex-row-center mt2 w-full pb-4">
+<!-- white menu option -->
+<!--
+<section hidden class="page-section bg-none order--1 absolute z-1 flex-row-center mt2 w-full pb-4">
   <div class="container flex-row-top mt-4">
     <a class="mr-4 flex-0-1 mt-0.5 w-auto" alt="Davinci Tour" href="/"><img src="./assets/logo-color.svg" width="200"/></a>
 
@@ -69,11 +70,99 @@
     })
   </script>
 </section>
+-->
+
+
+<section id="site-header" class="page-section order--1 absolute z-1 flex-row-center mt2 w-full pb-4">
+  <div class="container flex-row-top mt-4">
+    <a class="mr-4 flex-0-1 mt-0.5 w-auto" alt="Davinci Tour" href="/"><img src="./assets/logo-color.svg" width="200"/></a>
+
+    <div id="site-menu" class="flex-column-stretch flex-1-1">
+      <nav id="menu-primary" class="flex-row-top justify-between mb-1">
+          <a id="link1" dropdown="#popover1" class="link active f-bold white b-red hover:b-red title bb-3">Поиск тура</a>
+          <div id="popover1" class="bg-white radius-0.5 z-999 pt-3 pb-3 px-4 elevation-5 flex-column-left" dropdown-content>
+            <a class="link dark-gray b-light-gray mb-1.5 hover:b-red title bb-3">Европа</a>
+            <a class="link dark-gray b-light-gray mb-1.5 hover:b-red title bb-3">Россия и СНГ</a>
+            <a class="link dark-gray b-light-gray mb-1.5 hover:b-red title bb-3">Автобусные туры</a>
+            <a class="link dark-gray b-light-gray mb-1.5 hover:b-red title bb-3">Загородный отдых</a>
+            <a class="link dark-gray b-light-gray mb-1.5 hover:b-red title bb-3">Круизы</a>
+            <a class="link dark-gray b-light-gray mb-1.5 hover:b-red title bb-3">Авиакассы</a>
+          </div>
+        <a dropdown="#popover2" class="link white b-white-30 hover:b-red title bb-3">Горящие туры</a>
+          <div id="popover2" class="bg-white radius-0.5 z-999 pt-3 pb-3 px-4 elevation-5 flex-column-left" dropdown-content>
+            <a class="link dark-gray b-light-gray mb-1.5 hover:b-red title bb-3">A</a>
+            <a class="link dark-gray b-light-gray mb-1.5 hover:b-red title bb-3">B</a>
+            <a class="link dark-gray b-light-gray mb-1.5 hover:b-red title bb-3">C</a>
+          </div>
+        <a dropdown="#popover" class="link white b-white-30 hover:b-red title bb-3">Спецпредложения</a>
+        <a dropdown="#popover" class="link white b-white-30 hover:b-red title bb-3">Отдых с детьми</a>
+        <a dropdown="#popover" class="link white b-white-30 hover:b-red title bb-3">Страны</a>
+        <a dropdown="#popover" class="link white b-white-30 hover:b-red title bb-3">Европа</a>
+      </nav>
+      <nav id="menu-secondary" class="flex-row-top justify-between fs-14">
+        <a dropdown="#popover" class="link white b-white-30 hover:b-red title bb-3">Европа</a>
+        <a dropdown="#popover" class="link white b-white-30 hover:b-red title bb-3">Россия и СНГ</a>
+        <a dropdown="#popover" class="link white b-white-30 hover:b-red title bb-3">Автобусные туры</a>
+        <a dropdown="#popover" class="link white b-white-30 hover:b-red title bb-3">Загородный отдых</a>
+        <a dropdown="#popover" class="link white b-white-30 hover:b-red title bb-3">Круизы</a>
+        <a dropdown="#popover" class="link white b-white-30 hover:b-red title bb-3">Авиакассы</a>
+      </nav>
+    </div>
+  <script type="text/javascript">
+    // init each dropdown
+    [...document.querySelectorAll('[dropdown]')].forEach(el => {
+      let selector = el.getAttribute('dropdown')
+      let content = document.querySelector(selector)
+      if (!content) return
+      drop = new Drop({
+        target: el,
+        content,
+        position: 'bottom left',
+        openOn: 'hover'
+      })
+    })
+  </script>
+</section>
+
+<section id="intro" class="page-section order--1 bg-center bg-cover relative">
+  <div class="container relative h-40">
+    <header id="intro-title" class="title absolute white t-16">
+      <h1 class="h1 dark-gray mb-2">
+        <small class="fs-22 text-shadow-1 white f-lower f-tracked ml-1">Отдых с детьми</small><br>
+        <big class="fs-64 text-shadow-1 white mt--2 lh-9 f-upper fw-800">На отлично</big>
+      </h1>
+      <script>
+        // simple parallax
+        let introEl = document.querySelector('#intro')
+        let startOffset = 50
+        introEl.style.backgroundPositionY = startOffset + '%'
+        window.addEventListener('scroll', e => {
+          introEl.style.backgroundPositionY = startOffset - window.scrollY / 10 + '%';
+        })
+      </script>
+    </header>
+
+    <div id="phones" class="flex-row absolute z-1 white r-0 t-20 bt-3 b-white pl-3 py-3 pr-4">
+      <div class="pill bg-white inline-block w-4 h-4 text-center">
+        <i class="material-icons blue v-middle lh-4 inline-block fs-20">phone_in_talk</i>
+      </div>
+      <address class="ml-2 f-title">
+        <span class="f-title f-normal f-bold f-18">Санкт-Петербург</span>
+        <dl class="p-0 m-0 grid-2x2 f-normal">
+          <dd class="grid-area-1x1 grid-place-lb m-0 fs-14">м. Озерки</dd>
+          <dt class="grid-area-2x1"><a class="white f-bold fs-18 text-clear" href="tel:+74546818">454-68-18</a></dt>
+          <dd class="grid-area-1x2 grid-place-lb m-0 fs-14">пл. Восстания</dd>
+          <dt class="grid-area-2x2"><a class="white f-bold fs-18 text-clear" href="tel:+77027881">702-78-81</a></dt>
+        </dl>
+      </address>
+    </div>
+  </div>
+</section>
 
 
 <main>
-  <section id="top-content" class="page-section mt-8 py-4">
-    <div class="container mt-10">
+  <section id="top-content" class="page-section mt-0 py-4">
+    <div class="container">
       <nav class="breadcrumbs cool fw-600 mb-4 fs-13">
         <a href="#" class="link cool b-light-red hover:b-red title lh-5 inline-block bb-3 mr-2">Спецпредложения</a>
         /
@@ -195,6 +284,29 @@
 
   </article>
 </main>
+
+
+
+<section id="outro" class="page-section bg-cover relative">
+  <div class="container h-100% relative flex-column-center justify-center text-center h-50">
+    <h2 class="h2 dark-gray white mt-0">Узнайте первыми о новых горячих предложениях!</h2>
+    <div class="flex-row-center">
+      <input class="input fs-18 pl-3 w-40 cool z-1" placeholder="your-email@travel.to" type="email"/>
+      <button class="button bg-yellow fs-15 navy display">Подписаться</button>
+    </div>
+    <p class="pt-2 white">Подпишитесь на нашу рассылку и мы бесплатно будем вам сообщать о выгодных предложениях.</p>
+  </div>
+  <script>
+    (()=>{
+    // simple parallax
+    let outroEl = document.querySelector('#outro')
+    let startOffset = 50
+    outroEl.style.backgroundPositionY = startOffset + '%'
+    window.addEventListener('scroll', e => {
+      outroEl.style.backgroundPositionY = startOffset - (window.scrollY - outroEl.offsetTop) / 10 + '%';
+    })})()
+  </script>
+</section>
 
 
 
