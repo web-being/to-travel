@@ -75,6 +75,22 @@ body {
   color: var(--white);
 }
 
+.price-tag {
+  border-radius: 3px;
+  background: linear-gradient(92.95deg, #FDD8E1 0.48%, #FAF5E4 99.26%);
+}
+.price-tag:before {
+  position: absolute;
+  top: 7px;
+  right: -13px;
+  width: 26.5px;
+  height: 26.5px;
+  border-radius: 4px;
+  transform: rotate(134deg) skewX(-10deg) skewY(-10deg);
+  background: #FAF5E4;
+  content: '';
+}
+
 .link {
   text-decoration: none;
 }
