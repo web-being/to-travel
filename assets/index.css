@@ -78,8 +78,8 @@ body {
 }
 .tag:before {
   position: absolute;
-  top: 10px;
-  right: -16px;
+  top: 10.25px;
+  right: -15px;
   width: 35.5px;
   height: 35.5px;
   border-radius: 5px;
