@@ -64,7 +64,6 @@ a { color: var(--link); }
 /*a:visited { color: var(--visited); }*/
 
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  line-height: 1.15;
   font-family: var(--display);
 }
 

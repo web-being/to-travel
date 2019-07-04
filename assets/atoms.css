@@ -135,7 +135,7 @@
 .text-100 { max-width: 45em; }
 .text-80 { max-width: 36em; }
 .text-66 { max-width: 30em; }
-.text-45 { max-width: 20em; line-height: 1.41; }
+.text-45 { max-width: 20em; }
 
 /* Book paragraph style - paragraphs are indented with no vertical spacing. */
 .text-center {

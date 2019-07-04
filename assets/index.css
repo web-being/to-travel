@@ -69,10 +69,23 @@ body {
   background-color: var(--washed-blue);
   color: var(--dark-gray);
   font-family: var(--display);
+  position: relative;
+  margin-right: 24px;
 }
 .tag:hover {
   background-color: var(--red);
   color: var(--white);
+}
+.tag:before {
+  position: absolute;
+  top: 10px;
+  right: -16px;
+  width: 35.5px;
+  height: 35.5px;
+  border-radius: 5px;
+  transform: rotate(134deg) skewX(-10deg) skewY(-10deg);
+  background: inherit;
+  content: '';
 }
 
 .price-tag {
