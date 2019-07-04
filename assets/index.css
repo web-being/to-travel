@@ -110,6 +110,7 @@ body {
   transform: translateY(-2px);
   background: linear-gradient(93.33deg, #177DC8 2.82%, #293DB6 97.5%);
   color: var(--white);
+  box-shadow: 0px 25.5769px 46.0385px rgba(2, 39, 122, 0.39), 0px 4.55769px 14.11538px rgba(30, 117, 206, 0.62);
 }
 .feature:hover .feature-title {
   color: var(--white);
