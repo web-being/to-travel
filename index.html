@@ -81,6 +81,7 @@
         <big class="fs-64 text-shadow-1 white mt--2 lh-9 f-upper fw-800">На отлично</big>
       </h1>
       <script>
+        // simple parallax
         let introEl = document.querySelector('#intro')
         let startOffset = 50
         introEl.style.backgroundPositionY = startOffset + '%'
@@ -622,6 +623,16 @@
     </div>
     <p class="pt-2 white">Подпишитесь на нашу рассылку и мы бесплатно будем вам сообщать о выгодных предложениях.</p>
   </div>
+  <script>
+    (()=>{
+    // simple parallax
+    let outroEl = document.querySelector('#outro')
+    let startOffset = 50
+    outroEl.style.backgroundPositionY = startOffset + '%'
+    window.addEventListener('scroll', e => {
+      outroEl.style.backgroundPositionY = startOffset - (window.scrollY - outroEl.offsetTop) / 10 + '%';
+    })})()
+  </script>
 </section>
 
 
