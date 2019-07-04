@@ -34,8 +34,8 @@ body {
 }
 #outro {
   height: 400px;
-  background-size: auto, cover;
   background: linear-gradient(to right, rgba(91, 69, 244, 0.17), rgba(238, 160, 73, 0.76)), url(./outro.webp) center no-repeat;
+  background-size: auto, cover;
 }
 
 #intro-title {
