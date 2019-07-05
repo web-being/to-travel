@@ -139,15 +139,18 @@ hr, .hr {
   border: 0;
   font-family: var(--display);
   font-weight: bold;
-  padding-left: 32px;
-  padding-right: 32px;
   padding-top: 12px;
   padding-bottom: 12px;
-  line-height: 1.5;
   border-radius: 4px;
   box-shadow: 0 7px 13px -3px rgba(35, 46, 66, 0.3), 0 2px 4px 0 rgba(35, 60, 66, 0.4);
   transition: box-shadow 0.15s ease, transform 0.15s ease;
   will-change: box-shadow, transform;
+
+  text-align: center;
+  line-height: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-size: 18px;
 }
 .button:hover {
   transform: translateY(-2px);
@@ -159,18 +162,23 @@ hr, .hr {
   font-family: var(--display);
   padding-top: 12px;
   padding-bottom: 12px;
-  line-height: 1.5;
   border-radius: 4px;
-  box-shadow: 0 7px 13px -3px rgba(35, 46, 66, 0.3), 0 2px 4px 0 rgba(35, 60, 66, 0.4);
   transition: box-shadow 0.15s ease, transform 0.15s ease;
   will-change: box-shadow, transform;
   background: var(--white);
+
+  box-shadow: 0px 14px 36px rgba(0, 20, 122, 0.15), 0px 2px 4px rgba(206, 103, 190, 0.11);
+  color: var(--text);
+  line-height: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 16px;
 }
 .input:hover {
-  transform: scale(1.1);
+  /*transform: scale(1.1);*/
 }
 .input::placeholder {
-  color: currentColor;
+  color: var(--light-gray);
 }
 
 .forward:after {
@@ -201,6 +209,11 @@ hr, .hr {
   color: #5d6494;
   background: linear-gradient(#fff,#e4e4e9) no-repeat;
   box-shadow: 0 7px 14px -3px rgba(45,35,66,0.3), 0 2px 4px 0 rgba(45,35,66,0.4), inset 0 -2px 0 0 #cfd1e3;
+}
+
+.button-big {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 
