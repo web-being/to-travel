@@ -81,6 +81,7 @@ body {
   width: 35.5px;
   height: 35.5px;
   border-radius: 5px;
+  border-top-left-radius: 3px;
   transform: rotate(134deg) skewX(-10deg) skewY(-10deg);
   background: inherit;
   content: '';

@@ -252,10 +252,10 @@
 .flex-column-baseline { display:flex; flex-direction: column; align-items: baseline; }
 .flex-column-stretch { display:flex; flex-direction: column; align-items: stretch; }
 
-.flex-1-1 { flex-grow: 1; flex-shring: 1; }
-.flex-0-1 { flex-grow: 0; flex-shring: 1; }
-.flex-1-0 { flex-grow: 1; flex-shring: 0; }
-.flex-0-0 { flex-grow: 0; flex-shring: 0; }
+.flex-1-1 { flex-grow: 1; flex-shrink: 1; }
+.flex-0-1 { flex-grow: 0; flex-shrink: 1; }
+.flex-1-0 { flex-grow: 1; flex-shrink: 0; }
+.flex-0-0 { flex-grow: 0; flex-shrink: 0; }
 
 .justify-center { justify-content: center; }
 .justify-start { justify-content: flex-start; }
