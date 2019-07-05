@@ -6,15 +6,29 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether-drop/1.4.2/css/drop-theme-arrows.min.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether-drop/1.4.2/js/drop.min.js"></script>
-<script src="https://unpkg.com/medium-zoom/dist/medium-zoom.min.js"></script>
+<!-- <script src="https://unpkg.com/medium-zoom/dist/medium-zoom.min.js"></script> -->
 
 <script type="module">
-  import $ from 'https://unpkg.com/spect?module'
+  // import $ from 'https://unpkg.com/spect?module'
   // TODO: bundle spect as UMD with $.fx
 
-  $('[zoom]', el => {
-    mediumZoom(el)
-  })
+  // $('[zoom]', el => {
+  //   console.log(el)
+  //   mediumZoom(el)
+  // })
+
+  // window.addEventListener('load', e => {
+  //   let w = window.width
+  //   let h = window.height
+  //   mediumZoom(document.querySelectorAll('[data-zoom]'), {
+  //     container: {
+  //       width: w * .8,
+  //       height: h * .8,
+  //       left: w * .1,
+  //       top: w * .1
+  //     }
+  //   })
+  // })
 </script>
 
 
@@ -205,6 +219,7 @@
       <div class="w-75% pr-4 br-3 b-near-white mr-4">
         <figure class="m-0 mx-0">
           <img
+            data-zoom
             id="zoom-default"
             src="./images/image-1.jpg"
             alt="Zoom with default options"
@@ -222,6 +237,7 @@
 
         <figure class="m-0 mx-0">
           <img
+            data-zoom
             id="zoom-margin"
             src="./images/image-2.jpg"
             alt="Zoom with margin"
@@ -237,6 +253,7 @@
 
         <figure class="m-0 mx-0">
           <img
+            data-zoom
             id="zoom-background"
             src="./images/image-3.jpg"
             alt="Zoom with background color"
@@ -391,6 +408,7 @@
 
         <figure class="m-0 mx-0" class="pull-right">
           <img
+            data-zoom
             id="zoom-scrollOffset"
             src="./images/image-4.jpg"
             alt="Zoom without scroll effect"
@@ -425,6 +443,7 @@
 
         <figure class="m-0 mx-0">
           <img
+            data-zoom
             id="zoom-trigger"
             src="./images/image-6.jpg"
             alt="Zoom to trigger"
@@ -443,6 +462,7 @@
 
         <figure class="m-0 mx-0">
           <img
+            data-zoom
             id="zoom-detach"
             src="./images/image-7.jpg"
             alt="Zoom detached after being zoomed once"
@@ -454,6 +474,40 @@
         <div class="elevation-2 w-100% text-center p-3 h-50">
           Еще баннер
         </div>
+
+
+        <h5 class="h4 dark-gray m-0 mt-6">Новости</h5>
+        <ul class="list">
+          <li>
+            <a href="#tunisia" class="flex-row-top mb-4 text-clear hover:slide">
+              <div class="w-8 h-8 mt-1.5 mb-1 mr-2 bg-cover bg-center radius-0.5 elevation-0" style="background-image: url(./assets/tunisia-small.png)"></div>
+              <p class="m-0 flex-0">Ахмед украл Аллу прямо из её машины, местонахождение неизвестно
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="#dominicana" class="flex-row-top mb-4 text-clear hover:slide">
+              <div class="w-8 h-8 mt-1.5 mb-1 mr-2 bg-cover bg-center radius-0.5 elevation-0" style="background-image: url(./assets/dominicana-small.png)"></div>
+              <p class="m-0 flex-0">Полицейский подкупал граждан на досмотре, был пойман с поличным
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="#uae" class="flex-row-top mb-4 text-clear hover:slide">
+              <div class="w-8 h-8 mt-1.5 mb-1 mr-2 bg-cover bg-center radius-0.5 elevation-0" style="background-image: url(./assets/uae-small.png)"></div>
+              <p class="m-0 flex-0">
+                Игрок Валенсии Ингаборга забил болт
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="#thailand" class="flex-row-top mb-4 text-clear hover:slide">
+              <div class="w-8 h-8 mt-1.5 mb-1 mr-2 bg-cover bg-center radius-0.5 elevation-0" style="background-image: url(./assets/thailand-small.png)"></div>
+              <p class="m-0 flex-0">Гусь откусил яблоко и съел его
+              </p>
+            </a>
+          </li>
+        </ul>
       </aside>
     </div>
   </article>
@@ -622,4 +676,3 @@
 
   </div>
 </footer>
-
