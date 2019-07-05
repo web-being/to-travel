@@ -161,16 +161,43 @@
 
 
 <main>
-  <section id="top-content" class="page-section mt-0 pt-4 pb-0">
-    <div class="container">
+  <section id="top-content" class="page-section relative mt-0 pt-4 pb-0">
+    <div class="container relative pt-1">
       <nav class="breadcrumbs cool fw-600 mb-4 fs-13">
         <a href="#" class="link cool b-light-red hover:b-red title lh-5 inline-block bb-3 mr-2">Спецпредложения</a>
         /
         <a href="#" class="link cool bb-none title lh-5 inline-block ml-2">Заголовок страницы</a>
       </nav>
-      <h2 class="h1 dark-gray mt-0 mb-0">Заголовок страницы</h2>
-      <p class="text-120 fs-18">Уже который год, не смотря на кризисы и инфляцию, с конца января по май в турфирмах кипит работа – клиенты бронируют свой летний отдых.   Почему же, несмотря на неуклонное ежегодное повышение цен, периодическое появление горящих туров непосредственно перед вылетом,  туристы все равно продолжают считать Раннее бронирование выгодным.</p>
+
+      <h2 class="h1 dark-gray mt-2 mb-2">Заголовок страницы</h2>
+
+      <p class="text-120 fs-18 mt-2">Уже который год, не смотря на кризисы и инфляцию, с конца января по май в турфирмах кипит работа – клиенты бронируют свой летний отдых.   Почему же, несмотря на неуклонное ежегодное повышение цен, периодическое появление горящих туров непосредственно перед вылетом,  туристы все равно продолжают считать Раннее бронирование выгодным.</p>
     </div>
+
+    <svg class="plane-trace w-100% block mt-3" version="1.1" viewBox="30 -20 1200 100">
+      <path fill="transparent" stroke="#E2E8F9" stroke-width="3" stroke-dasharray="10,15" d="M2 79.3073C73.5434 -16.8378 219.812 -20.4579 679.5 51.3073C907.491 80.0728 1047.46 88.1554 1243.5 23.3072" class="path"></path>
+      <path id="plane-1" class="plane" fill-rule="evenodd" clip-rule="evenodd" fill="#ACC7E5" transform="translate(-10 -20)" d="M16.9718 34.4288L18.6795 34.4288L21.7845 29.9266L23.4146 30.0042C24.3461 30.0042 25.1224 29.228 25.1224 28.2965C25.0447 27.5978 24.579 26.9768 23.958 26.8216L26.7525 22.7851L34.4373 23.018C38.3962 22.9404 39.0172 20.3011 39.0172 19.9906C39.0172 19.5249 38.2409 17.0409 34.3597 17.0409L26.7525 17.3514L23.958 13.3149C24.6566 13.0821 25.1224 12.4611 25.0447 11.7624C25.0447 10.8309 24.3461 10.1323 23.4146 10.1323L21.7845 10.0547L18.6019 5.6301L17.0494 5.6301L19.2229 17.5843L10.529 17.8948L7.42397 13.5478L6.72535 13.4702L6.72535 18.2829C6.10435 18.5934 5.71623 19.292 5.71623 19.913C5.63861 20.7669 6.10435 21.3879 6.72535 21.8536L6.72535 26.5111L7.50159 26.5111L10.4513 22.1641L19.2229 22.5522L16.9718 34.4288Z"/>
+    </svg>
+    <style>
+      .plane {
+        offset-distance: 0%;
+        animation: plane 8s linear infinite;
+      }
+      #plane-1{
+        offset-path: path('M2 79.3073C73.5434 -16.8378 219.812 -20.4579 679.5 51.3073C907.491 80.0728 1047.46 88.1554 1243.5 23.3072');
+      }
+      #plane-2{
+        offset-path: path('M1 1C229 51 439 60.7968 671 74.8984C903 89 1109 103 1333 159');
+      }
+      @keyframes plane {
+        from {
+          offset-distance: 0%;
+        }
+        to {
+          offset-distance: 100%;
+        }
+      }
+    </style>
   </section>
 
   <article class="container">
@@ -310,10 +337,19 @@
 
 
 
+
 <footer id="footer" class="page-section bg-cover bg-center relative pb-4 pt-8">
   <div class="container relative">
     <div class="flex-row-top">
-      <a id="footer-logo" class="mr-4"><img width=200 src="./assets/logo-color.svg"/></a>
+      <div class="flex-column-left">
+        <a id="footer-logo" class="mr-4"><img width=200 src="./assets/logo-color.svg"/></a>
+
+        <p id="requisites" class="w-25 mr-3 mt-4">
+          © ООО «Да Винчи» (2011 - 2019)
+          ИНН 9701074247 ОГРН 1177746448703
+          105082, г. Санкт-Петербург, ул. Фридриха Энгельса, д.75, стр.21, этаж 2, офис 203
+        </p>
+      </div>
 
       <div class="flex-row-top">
         <nav>
@@ -425,23 +461,18 @@
       </div>
     </div>
 
-    <div class="flex-row-top">
-      <p id="requisites" class=" mr-4">
-        © ООО «Да Винчи» (2011 - 2019)
-        ИНН 9701074247 ОГРН 1177746448703
-        105082, г. Санкт-Петербург, ул. Фридриха Энгельса, д.75, стр.21, этаж 2, офис 203
-      </p>
-
+    <div class="flex-row-center">
       <p id="legal">
         Вся информация, размещённая на сайте, носит информационный характер и не является рекламой и публичной офертой. Копирование материалов без письменного согласия запрещено.
         <a href="">Политика конфиденциальности (pdf)</a>
       </p>
+
+      <div id="banks" class="flex-row-center">
+        <img width=40 src="./assets/visa.svg"/>
+        <img width=40 src="./assets/mastercard.svg"/>
+      </div>
     </div>
 
-    <div id="banks" class="flex-row-center">
-      <img width=40 src="./assets/visa.svg"/>
-      <img width=40 src="./assets/mastercard.svg"/>
-    </div>
   </div>
 </footer>
 
