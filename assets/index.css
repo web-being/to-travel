@@ -104,6 +104,37 @@ body {
   content: '';
 }
 
+.tour-tag {
+  border-radius: 3px;
+  background: var(--red);
+  color: var(--white);
+}
+.tour-tag:before {
+  position: absolute;
+  top: 7px;
+  right: -11px;
+  width: 26px;
+  height: 26px;
+  border-radius: 5px;
+  border-top-left-radius: 2px;
+  transform: rotate(134deg) skewX(-10deg) skewY(-10deg);
+  background: var(--red);
+  content: '';
+}
+.tour-tag-yellow {
+  background: var(--yellow);
+}
+.tour-tag-yellow:before {
+  background: var(--yellow);
+}
+
+.stripe > *:nth-of-type(odd) {
+  background:
+    linear-gradient(to right, var(--white) 0, var(--near-white) 3%, var(--near-white) 97%, var(--white) 100%),
+    var(--near-white);
+}
+
+
 .link {
   text-decoration: none;
 }
