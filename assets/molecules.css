@@ -195,6 +195,7 @@ hr, .hr {
 }
 
 .button-red {
+  color: var(--white);
   background: linear-gradient(var(--red),var(--dark-red)) no-repeat;
   box-shadow: 0 7px 13px -3px rgba(66, 35, 35, 0.3), 0 2px 4px 0 rgba(66, 35, 35, 0.4), inset 0 -2px 0 0 #bb4c4c;
 }
@@ -229,4 +230,9 @@ hr, .hr {
 .reset::-moz-focus-inner {
   border: 0;
   padding: 0;
+}
+
+
+.stripe > *:nth-of-type(odd) {
+  background: var(--near-white);
 }

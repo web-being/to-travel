@@ -430,4 +430,5 @@
 .hover\:b-washed-yellow:hover { border-color: var(--washed-yellow); }
 .hover\:b-washed-red:hover { border-color: var(--washed-red); }
 
-.b-transparent { border-color: var(--transparent); }
+.hover\:b-transparent { border-color: var(--transparent); }
+
