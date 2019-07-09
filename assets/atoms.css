@@ -195,6 +195,10 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
 }
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 .grid-place-lt { place-self: start start }
 .grid-place-ct { place-self: start center }

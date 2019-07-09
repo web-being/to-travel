@@ -134,6 +134,13 @@ body {
     var(--near-white);
 }
 
+.stripe-4 > *:nth-child(4n),
+.stripe-4 > *:nth-child(4n - 3) {
+  background:
+    linear-gradient(to right, var(--white) 0, var(--near-white) 3%, var(--near-white) 97%, var(--white) 100%),
+    var(--near-white);
+}
+
 
 .link {
   text-decoration: none;
