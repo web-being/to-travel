@@ -1,0 +1,262 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:500,700,800|Source+Sans+Pro:400,400i,700&display=swap&subset=cyrillic"/>
+<link rel="stylesheet" href="./assets/remedy.css"/>
+<link rel="stylesheet" href="./assets/molecules.css"/>
+<link rel="stylesheet" href="./assets/index.css"/>
+<link rel="stylesheet" href="./assets/flag-icon.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether-drop/1.4.2/css/drop-theme-arrows.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether-drop/1.4.2/js/drop.min.js"></script>
+
+
+
+<section id="top-content" class="page-section pt-6 pb-8">
+  <div class="container">
+    <nav class="breadcrumbs cool fw-600 mb-4 fs-20">
+      <a href="#" class="link cool b-light-red hover:b-red hover:red title lh-5 inline-block bb-3 mr-2">Главная</a>
+      /
+      <a href="#" class="link cool bb-none title lh-5 inline-block ml-2">Списки</a>
+    </nav>
+    <h2 class="h1 dark-gray mt-0 mb-0">Списки</h2>
+    <p class="text-120 fs-20 mb-0">Виды списков из последнего обсуждения: новости, статьи, страны, отзывы.</p>
+  </div>
+</section>
+
+<section id="site-header" class="page-section order--1 absolute z-1 flex-row-center mt2 w-full pb-4">
+  <div class="container flex-row-top mt-4">
+    <a class="mr-4 flex-0-1 mt-0.5 w-auto" alt="Davinci Tour" href="/"><img src="./assets/logo-color.svg" width="200"/></a>
+
+    <div id="site-menu" class="flex-column-stretch flex-1-1">
+      <nav id="menu-primary" class="flex-row-top just-between mb-1">
+          <a id="link1" dropdown="#popover1" class="link active f-bold white b-red hover:b-red title bb-3">Поиск тура</a>
+          <div id="popover1" class="bg-white b-rad-0.5 z-999 pt-3 pb-3 px-4 elevation-5 flex-column-left" dropdown-content>
+            <a class="link dark-gray b-light-gray mb-1.5 hover:b-red title bb-3">Европа</a>
+            <a class="link dark-gray b-light-gray mb-1.5 hover:b-red title bb-3">Россия и СНГ</a>
+            <a class="link dark-gray b-light-gray mb-1.5 hover:b-red title bb-3">Автобусные туры</a>
+            <a class="link dark-gray b-light-gray mb-1.5 hover:b-red title bb-3">Загородный отдых</a>
+            <a class="link dark-gray b-light-gray mb-1.5 hover:b-red title bb-3">Круизы</a>
+            <a class="link dark-gray b-light-gray mb-1.5 hover:b-red title bb-3">Авиакассы</a>
+          </div>
+        <a dropdown="#popover2" class="link white b-white-30 hover:b-red title bb-3">Горящие туры</a>
+          <div id="popover2" class="bg-white b-rad-0.5 z-999 pt-3 pb-3 px-4 elevation-5 flex-column-left" dropdown-content>
+            <a class="link dark-gray b-light-gray mb-1.5 hover:b-red title bb-3">A</a>
+            <a class="link dark-gray b-light-gray mb-1.5 hover:b-red title bb-3">B</a>
+            <a class="link dark-gray b-light-gray mb-1.5 hover:b-red title bb-3">C</a>
+          </div>
+        <a dropdown="#popover" class="link white b-white-30 hover:b-red title bb-3">Спецпредложения</a>
+        <a dropdown="#popover" class="link white b-white-30 hover:b-red title bb-3">Отдых с детьми</a>
+        <a dropdown="#popover" class="link white b-white-30 hover:b-red title bb-3">Страны</a>
+        <a dropdown="#popover" class="link white b-white-30 hover:b-red title bb-3">Европа</a>
+      </nav>
+      <nav id="menu-secondary" class="flex-row-top just-between fs-14">
+        <a dropdown="#popover" class="link white b-white-30 hover:b-red title bb-3">Европа</a>
+        <a dropdown="#popover" class="link white b-white-30 hover:b-red title bb-3">Россия и СНГ</a>
+        <a dropdown="#popover" class="link white b-white-30 hover:b-red title bb-3">Автобусные туры</a>
+        <a dropdown="#popover" class="link white b-white-30 hover:b-red title bb-3">Загородный отдых</a>
+        <a dropdown="#popover" class="link white b-white-30 hover:b-red title bb-3">Круизы</a>
+        <a dropdown="#popover" class="link white b-white-30 hover:b-red title bb-3">Авиакассы</a>
+      </nav>
+    </div>
+  <script type="text/javascript">
+    // init each dropdown
+    [...document.querySelectorAll('[dropdown]')].forEach(el => {
+      let selector = el.getAttribute('dropdown')
+      let content = document.querySelector(selector)
+      if (!content) return
+      drop = new Drop({
+        target: el,
+        content,
+        position: 'bottom left',
+        openOn: 'hover'
+      })
+    })
+  </script>
+</section>
+
+<section id="intro" class="page-section order--1 bg-center bg-cover relative">
+  <div class="container relative h-50">
+    <header id="intro-title" class="title absolute white t-20">
+      <h1 class="h1 dark-gray mb-2">
+        <small class="fs-22 text-shadow-1 white f-lower f-tracked ml-1">Отдых с детьми</small><br>
+        <big class="fs-64 text-shadow-1 white mt--2 lh-9 f-upper fw-800">На отлично</big>
+      </h1>
+      <script>
+        // simple parallax
+        let introEl = document.querySelector('#intro')
+        let startOffset = 50
+        introEl.style.backgroundPositionY = startOffset + '%'
+        window.addEventListener('scroll', e => {
+          introEl.style.backgroundPositionY = startOffset - window.scrollY / 10 + '%';
+        })
+      </script>
+    </header>
+
+    <div id="phones" class="flex-row absolute z-1 white r-0 t-20 bt-3 b-white pl-3 py-3 pr-4">
+      <div class="b-rad-999 bg-white inline-block w-4 h-4 text-center">
+        <i class="material-icons blue v-middle lh-4 inline-block fs-20">phone_in_talk</i>
+      </div>
+      <address class="ml-2 f-title">
+        <span class="f-title f-normal f-bold f-18">Санкт-Петербург</span>
+        <dl class="p-0 m-0 grid-2x2 f-normal">
+          <dd class="grid-area-1x1 grid-place-lb m-0 fs-14">м. Озерки</dd>
+          <dt class="grid-area-2x1"><a class="white f-bold fs-18 text-clear" href="tel:+74546818">454-68-18</a></dt>
+          <dd class="grid-area-1x2 grid-place-lb m-0 fs-14">пл. Восстания</dd>
+          <dt class="grid-area-2x2"><a class="white f-bold fs-18 text-clear" href="tel:+77027881">702-78-81</a></dt>
+        </dl>
+      </address>
+    </div>
+  </div>
+</section>
+
+
+<div class="container"><hr class="hr"/></div>
+
+
+<section id="news">
+  <div class="container mb-8 mt-6 flex-column-center">
+
+    <header class="w-100%">
+      <h2 class="h2 dark-gray my-0">Новости</h2>
+      <p class="text-45 fs-20 mb-6">Мы покажем все туры, а вам останется только
+      успеть купить лучшее</p>
+    </header>
+
+    <div id="news-list" class="stripe mb-3">
+      <article class="news-item py-3 mx--8 px-8 flex-row-stretch">
+        <div class="news-image relative w-32 h-25 flex-0-0 bg-center bg-cover b-rad-.5 elevation-3" style="background-image: url(./images/news-0.jpg);"></div>
+        <div class="news-content ml-4 mr-4">
+          <header class="flex-row-center just-between mt-2 mb-2">
+            <h4 class="dark-gray f-body flex-row-center m-0">С НОВЫМ ГОДОМ, ДОРОГИЕ ДРУЗЬЯ!</h4>
+          </header>
+          <p class="fs-18 mb-1">
+            С НОВЫМ ГОДОМ, ДОРОГИЕ ДРУЗЬЯ! ПОЗВОЛЬТЕ ПОЖЕЛАТЬ ВАМ В 2019 ГОДУ: 12 МЕСЯЦЕВ СЧАСТЬЯ, 52 НЕДЕЛИ ЛЮБВИ, 365 ДНЕЙ ЗДОРОВЬЯ , 8760 ЧАСОВ УДАЧИ, 525.600 МИНУ...
+          </p>
+
+          <a href="#details " class="link mt-1 f-body dark-gray b-light-gray my-0 bb-3 lh-4 inline-block hover:b-red hover:red fw-600">Подробнее</a>
+
+          <footer class="gray fs-18 flex-row-center a-.5 mt-2">
+            <i class="material-icons mr-1">calendar_today</i><strong class="fw-500">28 декабря 2018</strong>
+          </footer>
+        </div>
+      </article>
+
+      <article class="news-item py-3 mx--8 px-8 flex-row-stretch">
+        <div class="news-image relative w-32 h-25 flex-0-0 bg-center bg-cover b-rad-.5 elevation-3" style="background-image: url(./images/news-1.jpg);"></div>
+        <div class="news-content ml-4 mr-4">
+          <header class="flex-row-center just-between mt-2 mb-2">
+            <h4 class="dark-gray f-body flex-row-center m-0">С ПРАЗДНИКОМ, ДОРОГИЕ ЖЕНЩИНЫ!</h4>
+          </header>
+          <p class="fs-18 mb-1">
+            Наш график работы в мартовские праздники: 8 марта - выходной, 9го с 11 до 17, 10го работает только офис в Озерках  с 11 до 17, с 12 марта -  в обычном режиме....
+          </p>
+
+          <a href="#details" class="link mt-1 f-body dark-gray b-light-gray my-0 bb-3 lh-4 inline-block hover:b-red hover:red fw-600">Подробнее</a>
+
+          <footer class="gray fs-18 flex-row-center a-.5 mt-2">
+            <i class="material-icons mr-1">calendar_today</i><strong class="fw-500">8 марта 2018</strong>
+          </footer>
+        </div>
+      </article>
+
+      <article class="news-item py-3 mx--8 px-8 flex-row-stretch">
+        <div class="news-image relative w-32 h-25 flex-0-0 bg-center bg-cover b-rad-.5 elevation-3" style="background-image: url(./images/news-2.jpg);"></div>
+        <div class="news-content ml-4 mr-4">
+          <header class="flex-row-center just-between mt-2 mb-2">
+            <h4 class="dark-gray f-body flex-row-center m-0">ГРАФИК РАБОТЫ В ФЕВРАЛЬСКИЕ ПРАЗДНИКИ 2018.</h4>
+          </header>
+          <p class="fs-18 mb-1">
+            23 февраля - выходной, 24 февраля -  с 11.00 до 17.00, 25 февраля - выходной, с 26 февраля -  в обычном режиме.
+          </p>
+
+          <a href="#details " class="link mt-1 f-body dark-gray b-light-gray my-0 bb-3 lh-4 inline-block hover:b-red hover:red fw-600">Подробнее</a>
+
+          <footer class="gray fs-18 flex-row-center a-.5 mt-2">
+            <i class="material-icons mr-1">calendar_today</i><strong class="fw-500">22 февраля 2018</strong>
+          </footer>
+        </div>
+      </article>
+
+      <article class="news-item py-3 mx--8 px-8 flex-row-stretch">
+        <div class="news-content ml-4 mr-4">
+          <header class="flex-row-center just-between mt-2 mb-2">
+            <h4 class="dark-gray f-body flex-row-center m-0">Поздравляем  с Днем России 12 июня!</h4>
+          </header>
+          <p class="fs-18 mb-1">
+            Напоминаем, что сегодня у нас выходной день. С 13 июня работаем в обычном режиме.
+          </p>
+
+          <a href="#details " class="link mt-1 f-body dark-gray b-light-gray my-0 bb-3 lh-4 inline-block hover:b-red hover:red fw-600">Подробнее</a>
+
+          <footer class="gray fs-18 flex-row-center a-.5 mt-2">
+            <i class="material-icons mr-1">calendar_today</i><strong class="fw-500">12 июня 2018</strong>
+          </footer>
+        </div>
+      </article>
+
+      <article class="news-item py-3 mx--8 px-8 flex-row-stretch">
+        <div class="news-content ml-4 mr-4">
+          <header class="flex-row-center just-between mt-2 mb-2">
+            <h4 class="dark-gray f-body flex-row-center m-0">Оплата через сайт</h4>
+          </header>
+          <p class="fs-18 mb-1">
+            В данном случае мы используем упрощенную системы онлайн оплаты,  при которой мы отправляем Вам ссылку, в которой необходимо заполнить  номер заказа и  сумму. При данном способе оплаты подтверждением является электронный чек...
+          </p>
+
+          <a href="#details " class="link mt-1 f-body dark-gray b-light-gray my-0 bb-3 lh-4 inline-block hover:b-red hover:red fw-600">Подробнее</a>
+
+          <footer class="gray fs-18 flex-row-center a-.5 mt-2">
+            <i class="material-icons mr-1">calendar_today</i><strong class="fw-500">16 ноября 2016</strong>
+          </footer>
+        </div>
+      </article>
+    </div>
+
+    <a href="#all-news" class="link inline-block f-display fw-600 lh-6 h-6 bb-3 black b-red hover:red">
+      Читать все новости
+      <svg class="ml-1.5" width="10" height="10" viewBox="0 0 10 10" stroke="currentcolor" stroke-width="2" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0 L0 0 5 5L5 5 0 10"/>
+        </svg>
+    </a>
+  </div>
+</section>
+
+
+<div class="container"><hr class="hr"/></div>
+
+
+
+<section id="countries">
+  <div class="container mb-8 mt-6 flex-column-center">
+
+    <header class="w-100%">
+      <h2 class="h2 dark-gray my-0">Страны</h2>
+      <p class="text-80 fs-20 mb-6">Все страны, покрытые нашим влиянием</p>
+    </header>
+
+    <div id="countries-list" class="stripe mb-3">
+      <article class="countries-item py-3 mx--8 px-8 flex-row-stretch">
+        <div class="countries-image relative w-32 h-25 flex-0-0 bg-center bg-cover b-rad-.5 elevation-3" style="background-image: url(./images/countries-0.jpg);"></div>
+        <div class="countries-content ml-4 mr-4">
+          <header class="flex-row-center just-between mt-2 mb-2">
+            <h4 class="dark-gray f-body flex-row-center m-0">Страна</h4>
+          </header>
+          <p class="fs-18 mb-1">
+            В процессе
+          </p>
+
+          <a href="#details " class="link mt-1 f-body dark-gray b-light-gray my-0 bb-3 lh-4 inline-block hover:b-red hover:red fw-600">Подробнее</a>
+
+          <footer class="gray fs-18 flex-row-center a-.5 mt-2">
+            <i class="material-icons mr-1">calendar_today</i><strong class="fw-500">28 декабря 2018</strong>
+          </footer>
+        </div>
+      </article>
+    </div>
+
+    <a href="#all-countries" class="link inline-block f-display fw-600 lh-6 h-6 bb-3 black b-red hover:red">
+      <svg class="ml-1.5" width="10" height="10" viewBox="0 0 10 10" stroke="currentcolor" stroke-width="2" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0 L0 0 5 5L5 5 0 10"/>
+        </svg>
+    </a>
+  </div>
+</section>
