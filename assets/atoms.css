@@ -249,12 +249,14 @@
 .flex-row-center { display:flex; flex-direction: row; align-items: center; }
 .flex-row-baseline { display:flex; flex-direction: row; align-items: baseline; }
 .flex-row-stretch { display:flex; flex-direction: row; align-items: stretch; }
+.flex-row-wrap { display:flex; flex-direction: row; align-items: flex-start; flex-wrap: wrap }
 
 .flex-column-left { display:flex; flex-direction: column; align-items: flex-start; }
 .flex-column-right { display:flex; flex-direction: column; align-items: flex-end; }
 .flex-column-center { display:flex; flex-direction: column; align-items: center; }
 .flex-column-baseline { display:flex; flex-direction: column; align-items: baseline; }
 .flex-column-stretch { display:flex; flex-direction: column; align-items: stretch; }
+.flex-column-wrap { display:flex; flex-direction: column; align-items: flex-start; flex-wrap: wrap }
 
 .flex-0 { flex-basis: 0; }
 .flex-1-1 { flex-grow: 1; flex-shrink: 1; }
