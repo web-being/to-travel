@@ -138,7 +138,7 @@
   </script>
 </section>
 
-<section id="intro" class="page-section order--1 bg-center bg-cover relative">
+<section id="intro" class="page-section order--1 bg-center bg-cover relative" style="padding-bottom: 240px; margin-bottom: -240px">
   <div class="container relative h-40">
     <header id="intro-title" class="title absolute white t-16">
       <h1 class="h1 dark-gray mb-2">
@@ -148,7 +148,7 @@
       <script>
         // simple parallax
         let introEl = document.querySelector('#intro')
-        let startOffset = 50
+        let startOffset = 80
         introEl.style.backgroundPositionY = startOffset + '%'
         window.addEventListener('scroll', e => {
           introEl.style.backgroundPositionY = startOffset - window.scrollY / 10 + '%';
@@ -175,10 +175,10 @@
 
 
 <main>
-  <section id="top-content" class="page-section relative mt-0 pt-4 pb-0">
-    <div class="container relative pt-1">
+  <section id="top-content" class="page-section relative mt-0 pt-8 pb-0">
+    <div class="container relative pt-8">
       <nav class="breadcrumbs cool fw-600 mb-4 fs-20">
-        <a href="#" class="link cool b-light-red hover:b-red title lh-5 inline-block bb-3 mr-2">Спецпредложения</a>
+        <a href="#" class="link cool b-light-red hover:b-red hover:red title lh-5 inline-block bb-3 mr-2">Спецпредложения</a>
         /
         <a href="#" class="link cool bb-none title lh-5 inline-block ml-2">Заголовок страницы</a>
       </nav>

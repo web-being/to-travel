@@ -10,8 +10,8 @@
 
 
 
-<section id="top-content" class="page-section pt-6 pb-8">
-  <div class="container">
+<section id="top-content" class="page-section pt-8 pb-8 z-1">
+  <div class="container pt-4">
     <nav class="breadcrumbs cool fw-600 mb-4 fs-20">
       <a href="#" class="link cool b-light-red hover:b-red hover:red title lh-5 inline-block bb-3 mr-2">Главная</a>
       /
@@ -73,9 +73,9 @@
   </script>
 </section>
 
-<section id="intro" class="page-section order--1 bg-center bg-cover relative">
-  <div class="container relative h-50">
-    <header id="intro-title" class="title absolute white t-20">
+<section id="intro" class="page-section order--1 bg-center bg-cover relative" style="padding-bottom: 240px; margin-bottom: -240px">
+  <div class="container relative h-40">
+    <header id="intro-title" class="title absolute white t-16">
       <h1 class="h1 dark-gray mb-2">
         <small class="fs-22 text-shadow-1 white f-lower f-tracked ml-1">Отдых с детьми</small><br>
         <big class="fs-64 text-shadow-1 white mt--2 lh-9 f-upper fw-800">На отлично</big>
@@ -83,7 +83,7 @@
       <script>
         // simple parallax
         let introEl = document.querySelector('#intro')
-        let startOffset = 50
+        let startOffset = 80
         introEl.style.backgroundPositionY = startOffset + '%'
         window.addEventListener('scroll', e => {
           introEl.style.backgroundPositionY = startOffset - window.scrollY / 10 + '%';
