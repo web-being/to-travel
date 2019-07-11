@@ -53,6 +53,11 @@ body {
   background: linear-gradient(89.41deg, #F3FBFD 0.35%, #F6F3F3 99.84%), #F3FBFD;
 }
 
+#cta {
+  border-top: 3px dashed rgba(255,255,255,.5);
+  border-bottom: 3px dashed rgba(255,255,255,.5);
+}
+
 #footer {
   background-size: fit;
   background-position: center;
