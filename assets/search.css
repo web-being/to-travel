@@ -1,3 +1,24 @@
+.TVMainForm, .TVOrderHotelBlock {
+background-color:#339cd4;
+background-color:rgba(51,156,212,1.00);
+}
+.TVSearchButton:hover {
+background-color:#ad5fa9;
+background-color:rgba(153,55,148,0.8);
+}
+.TVSearchButton.TVActive {
+background-color:#ad5fa9;
+background-color:rgba(153,55,148,0.8);
+}
+.TVSearchButton{
+background-color:#993794;
+background-color:rgba(153,55,148,1.00);
+color: #FFF;
+color: rgba(255, 255, 255, 0.95);
+text-shadow: none;
+}
+
+
 /**
 
 CSS for search tours module:
@@ -38,23 +59,24 @@ https://cabinet.tourvisor.ru/module/code/search/0;
   font-family: var(--display);
 }
 .TVTextBox, .TVBigBox, .TVLocationBox {
-  box-shadow: 0px 14px 36px rgba(0, 20, 122, 0.15), 0px 2px 4px rgba(206, 103, 190, 0.11);
-  border-radius: 4px;
-  color: #62A5D9;
+  box-shadow: 0px 14px 36px rgba(0, 20, 122, 0.15), 0px 2px 4px rgba(206, 103, 190, 0.11)!important;
+  border-radius: 4px!important;
+  color: #62A5D9!important;
   line-height: 32px;
   padding-left: 16px;
   padding-right: 16px;
-  background: white;
+  background: white!important;
   font-size: 16px;
 }
 .TVTextBox:hover, .TVBigBox:hover, .TVLocationBox:hover {
-  box-shadow: 0px 14px 36px rgba(0, 20, 122, 0.15), 0px 2px 4px rgba(206, 103, 190, 0.11);
+  box-shadow: 0px 14px 36px rgba(0, 20, 122, 0.15), 0px 2px 4px rgba(206, 103, 190, 0.11)!important;
   border-radius: 4px;
 }
 .TVWideForm .TVLocationBox {
   margin: 0;
-  padding: 14px 16px;
+  padding: 8px 16px;
   color: #62A5D9;
+  box-sizing: border-box;
 }
 .TVWideForm .TVLocationBox .TVContent {
   font-family: Tourvisor,Trebuchet MS,arial,sans-serif;
@@ -70,7 +92,7 @@ https://cabinet.tourvisor.ru/module/code/search/0;
   top: -2px;
 }
 .TVSearchButtonBlock {
-  position: absolute;
+  position: absolute!important;
   left: 50%;
   bottom: -24px;
 }
@@ -132,4 +154,16 @@ https://cabinet.tourvisor.ru/module/code/search/0;
 .TVSRFixePanel, .TVSRFloatPanel {
   background-image: linear-gradient(to top,#f5f5fa,white);
   box-shadow: 0 5px 15px 0 rgba(37,44,97,0.15), 0 2px 4px 0 rgba(93,100,148,0.2);
+}
+
+.TVFlexContainer.TVMainForm .TVFlexItem {
+  flex: 1 1;
+  position: static;
+  margin-right: 8px;
+}
+
+
+.TVSearchingForm .TVSearchButton {
+height: auto!important;
+box-sizing: content-box!important;
 }

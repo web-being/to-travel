@@ -2,22 +2,11 @@
  * tachyons
  */
 
-.o-hidden {
-  overflow: hidden
-}
-.o-visible {
-  overflow: visible;
-}
-.o-scroll {
-  overflow: scroll;
-}
-.ox-scroll {
-  overflow-x: scroll;
-}
-.oy-scroll {
-  overflow-x: scroll;
-}
-
+.o-hidden { overflow: hidden }
+.o-visible { overflow: visible; }
+.o-scroll { overflow: scroll; }
+.ox-scroll { overflow-x: scroll; }
+.oy-scroll { overflow-x: scroll; }
 
 /** Typyons */
 .fs-108, .imperial { font-size: 108px; }
