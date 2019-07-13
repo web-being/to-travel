@@ -148,9 +148,6 @@ https://cabinet.tourvisor.ru/module/code/search/0;
   width: auto!important;
   padding-top: 64px;
 }
-.TVSRContainer {
-  box-shadow: 0 5px 15px 0 rgba(37,44,97,.15), 0 2px 4px 0 rgba(93,100,148,.2)
-}
 .TVSRFixePanel, .TVSRFloatPanel {
   background-image: linear-gradient(to top,#f5f5fa,white);
   box-shadow: 0 5px 15px 0 rgba(37,44,97,0.15), 0 2px 4px 0 rgba(93,100,148,0.2);
@@ -166,4 +163,113 @@ https://cabinet.tourvisor.ru/module/code/search/0;
 .TVSearchingForm .TVSearchButton {
 height: auto!important;
 box-sizing: content-box!important;
+}
+
+
+
+
+
+/* ---------------- results ------------------- */
+.TVSRHotelName a, .TVSRHotelName a:link, .TVSRHotelName a:visited {
+font-family: var(--paragraph);
+    color: var(--dark-gray);
+font-size: 24px;
+font-weight: 700;
+}
+
+.TVSRHotelDescr {
+font-size: 18px;
+    font-family: var(--paragraph);
+    color: var(--gray);
+}
+.TVSRHotelImg img {
+border: 0;
+box-shadow: none;
+}
+.TVSRHotelImg {
+box-shadow: rgba(37, 44, 97, 0.15) 0px 5px 15px 0px, rgba(93, 100, 148, 0.2) 0px 2px 4px 0px;
+box-sizing: border-box;
+overflow: hidden;
+border-radius: 4px;
+}
+
+.TVSRBodyContainer > .blpricesort:nth-of-type(odd) {
+background: linear-gradient(to right, var(--white) 0, var(--near-white) 3%, var(--near-white) 97%, var(--white) 100%),
+    var(--near-white)
+}
+.TVSRContainer {
+box-shadow: none;
+background: none;
+padding-bottom: 12px;
+}
+.TVSRContainer:hover {
+box-shadow: 0px 25.5769px 46.0385px rgba(2, 21, 122, 0.1), 0px 2.55769px 5.11538px rgba(30, 47, 206, 0.08);
+}
+.TVSRHotelResort {
+font-size: 18px;
+font-family: var(--paragraph);
+color: var(--gray);
+font-weight: bold;
+}
+.TVSRHotelStars {
+margin-top: 12px;
+}
+.TVSRPriceValue {
+    border-radius: 3px;
+    background: var(--red);
+    color: var(--white);
+    border-bottom-left-radius: 3px;
+border-bottom-right-radius: 3px;
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+box-shadow: rgba(37, 44, 97, 0.15) 0px 5px 15px 0px, rgba(93, 100, 148, 0.2) 0px 2px 4px 0px;
+box-sizing: border-box;
+color: rgb(255, 255, 255);
+display: block;
+font-family: var(--paragraph);
+font-weight: bold;
+font-size: 18px;
+height: 40px;
+left: 8px;
+line-height: 40px;
+max-height: 999999px;
+padding-left: 16px;
+padding-right: 16px;
+position: absolute;
+top: 0;
+text-decoration: none!important;
+padding-top: 0;
+padding-bottom: 0;
+width: auto;
+white-space: nowrap;
+text-shadow: none;
+}
+.TVSRPriceValue:before {
+position: absolute;
+    top: 7px;
+    left: -11px;
+    width: 26px;
+    height: 26px;
+    border-radius: 5px;
+    border-bottom-right-radius: 2px;
+    transform: rotate(134deg) skewX(-10deg) skewY(-10deg);
+    background: var(--red);
+    content: '';
+}
+.TVSRArrow {
+display: none;
+}
+.TVSRRpiceType {
+margin-top: 44px;
+}
+.TVSRHotelRating {
+right: 30px;
+background: none;
+font-family: var(--paragraph);
+top: -16px;
+}
+.TVSRContainer .TVNavButton, .TVSRSearchMoreBtn.TVNavButton, .TVSRUpdateSearchResultBtn.TVNavButton {
+font-family: var(--paragraph);
+    color: var(--gray);
+    font-size: 13px;
 }
