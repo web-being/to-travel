@@ -29,10 +29,11 @@
   --monospace: monospace;
   --icon: 'Material Icons';
 
-  --link: var(--blue);
+  /* --link: var(--blue); */
+  --link: #0887d4;
   --hover: var(--red);
   --visited: var(--blue);
-  --text: var(--gray);
+  --text: var(--dark-gray);
   --title: var(--dark-gray);
 }
 
@@ -51,25 +52,28 @@
 
 
 p, .paragraph, .p, ul, ol, pre, table, blockquote {
-  margin-bottom: .75rem;
-  margin-top: .75rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
   color: var(--text);
 }
 
 a { color: var(--link); }
-/*a:hover { color: var(--hover); }*/
+a:hover { color: var(--hover); }
 /*a:visited { color: var(--visited); }*/
 
-.h1, .h2, .h3, .h4, .h5, .h6 {
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--display);
+  color: var(--dark-gray);
+  line-height: 1.3;
 }
 
-h1, .h1 { font-size: 3.052em; }
-h2, .h2 { font-size: 2.441em; }
-h3, .h3 { font-size: 1.953em; }
-h4, .h4 { font-size: 1.563em; }
-h5, .h5 { font-size: 1.25em; }
-h6, .h6 { font-size: 1em; }
+h1, .h1 { font-size: 3.052rem; }
+h2, .h2 { font-size: 2.441rem; }
+h3, .h3 { font-size: 1.953rem; }
+h4, .h4 { font-size: 1.563rem; }
+h5, .h5 { font-size: 1.25rem; }
+h6, .h6 { font-size: 1rem; }
 
 small, .text-small { font-size: 0.8em; }
 

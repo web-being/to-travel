@@ -157,6 +157,71 @@
 .color-inherit { color: inherit; }
 
 
+
+
+.black-90\! {         color: var(--black-90)!important; }
+.black-80\! {         color: var(--black-80)!important; }
+.black-70\! {         color: var(--black-70)!important; }
+.black-60\! {         color: var(--black-60)!important; }
+.black-50\! {         color: var(--black-50)!important; }
+.black-40\! {         color: var(--black-40)!important; }
+.black-30\! {         color: var(--black-30)!important; }
+.black-20\! {         color: var(--black-20)!important; }
+.black-10\! {         color: var(--black-10)!important; }
+.black-05\! {         color: var(--black-05)!important; }
+
+.white-90\! {         color: var(--white-90)!important; }
+.white-80\! {         color: var(--white-80)!important; }
+.white-70\! {         color: var(--white-70)!important; }
+.white-60\! {         color: var(--white-60)!important; }
+.white-50\! {         color: var(--white-50)!important; }
+.white-40\! {         color: var(--white-40)!important; }
+.white-30\! {         color: var(--white-30)!important; }
+.white-20\! {         color: var(--white-20)!important; }
+.white-10\! {         color: var(--white-10)!important; }
+
+.black\! {         color: var(--black)!important; }
+.near-black\! {    color: var(--near-black)!important; }
+.dark-gray\! {     color: var(--dark-gray)!important; }
+.mid-gray\! {      color: var(--mid-gray)!important; }
+.gray\! {          color: var(--gray)!important; }
+.silver \! {       color: var(--silver)!important; }
+.light-silver\! {  color: var(--light-silver)!important; }
+.moon-gray\! {     color: var(--moon-gray)!important; }
+.light-gray\! {    color: var(--light-gray)!important; }
+.near-white\! {    color: var(--near-white)!important; }
+.white\! {         color: var(--white)!important; }
+
+.dark-red\! { color: var(--dark-red)!important; }
+.red\! { color: var(--red)!important; }
+.light-red\! { color: var(--light-red)!important; }
+.orange\! { color: var(--orange)!important; }
+.gold\! { color: var(--gold)!important; }
+.yellow\! { color: var(--yellow)!important; }
+.light-yellow\! { color: var(--light-yellow)!important; }
+.purple\! { color: var(--purple)!important; }
+.light-purple\! { color: var(--light-purple)!important; }
+.dark-pink\! { color: var(--dark-pink)!important; }
+.hot-pink\! { color: var(--hot-pink)!important; }
+.pink\! { color: var(--pink)!important; }
+.light-pink\! { color: var(--light-pink)!important; }
+.dark-green\! { color: var(--dark-green)!important; }
+.green\! { color: var(--green)!important; }
+.light-green\! { color: var(--light-green)!important; }
+.navy\! { color: var(--navy)!important; }
+.dark-blue\! { color: var(--dark-blue)!important; }
+.blue\! { color: var(--blue)!important; }
+.light-blue\! { color: var(--light-blue)!important; }
+.lightest-blue\! { color: var(--lightest-blue)!important; }
+.washed-blue\! { color: var(--washed-blue)!important; }
+.washed-green\! { color: var(--washed-green)!important; }
+.washed-yellow\! { color: var(--washed-yellow)!important; }
+.washed-red\! { color: var(--washed-red)!important; }
+.color-inherit\! { color: inherit!important; }
+
+
+
+
 .hover\:black-90:hover {         color: var(--black-90); }
 .hover\:black-80:hover {         color: var(--black-80); }
 .hover\:black-70:hover {         color: var(--black-70); }
